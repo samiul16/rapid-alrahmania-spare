@@ -389,7 +389,7 @@ const HotProductsSection = () => {
                       {/* Add to Cart Button */}
                       <motion.button
                         onClick={() => handleAddToCart(product)}
-                        className="w-full py-2.5 sm:py-3 rounded-[50px] bg-gradient-to-r from-[#E9292A] to-[#943835] border border-[#E9292A] font-bold text-base sm:text-lg hover:bg-[#d12621] text-white transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                        className="w-full py-2.5 sm:py-3 rounded-[50px] bg-gradient-to-r from-[#E9292A] to-red-700 border border-[#E9292A] font-bold text-base sm:text-lg hover:bg-[#d12621] text-white transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
