@@ -182,15 +182,15 @@ const GetStarted = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/getStart.png')",
+            backgroundImage: "url('/get-started.jpeg')",
           }}
         >
           {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-stone-900/70"></div>
+          <div className="absolute inset-0 bg-stone-900/80"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-8xl mx-auto px-4 py-16 flex flex-col lg:flex-row justify-between items-start ">
+        <div className="relative z-10 max-w-[1800px] mx-auto px-4 py-16 flex flex-col lg:flex-row justify-between items-start ">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0 px-10">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-[-0.4px]">
@@ -212,10 +212,10 @@ const GetStarted = () => {
                 <div className="flex flex-col">
                   <h4 className="text-xl font-medium text-white">Email</h4>
                   <a
-                    href="mailto:info@majokaengineering.com"
+                    href="mailto:info@alrahmaniahautouae.com"
                     className="text-base font-medium text-white hover:underline"
                   >
-                    info@majokaengineering.com
+                    info@alrahmaniahautouae.com
                   </a>
                 </div>
               </div>
@@ -228,10 +228,10 @@ const GetStarted = () => {
                 <div className="flex flex-col">
                   <h4 className="text-xl font-medium text-white">Phone</h4>
                   <a
-                    href="tel:+9660503010184"
+                    href="tel:+971 55 867 4927"
                     className="text-base font-medium text-white hover:underline"
                   >
-                    +966-0503010184
+                    +971 55 867 4927
                   </a>
                 </div>
               </div>
@@ -244,7 +244,7 @@ const GetStarted = () => {
                 <div className="flex flex-col">
                   <h4 className="text-xl font-medium text-white">Office</h4>
                   <p className="text-base font-medium text-white">
-                    Mecca, Saudi Arabia
+                    Address ind.Area 1 P.O. Box: 79308
                   </p>
                 </div>
               </div>

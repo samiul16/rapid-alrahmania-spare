@@ -78,7 +78,7 @@ const DownloadOurApp = () => {
               <div className="text-white space-y-8">
                 <div>
                   <h2 className="text-4xl lg:text-4xl font-bold mb-6 leading-tight">
-                    Download Alburaq App!
+                    Download Al Rahmaniah App!
                   </h2>
                   <p className="text-lg text-white/90 leading-relaxed max-w-lg text-shadow-2xs">
                     Download our app today to access our services right from

@@ -255,8 +255,12 @@ const HotProductsSection = () => {
         >
           {/* Title */}
           <h2 className="text-5xl sm:text-5xl font-bold text-[#E9292A] text-shadow-md text-center">
-            Hot Selling Parts
+            Hot Products of the Month
           </h2>
+
+          <p className="text-gray-600 text-lg max-w-5xl mx-auto">
+            Trending and must-have car parts handpicked for you
+          </p>
 
           {/* Category Filter */}
           <div className="bg-white rounded-[50px] shadow-xl border border-[#E9292A]/20 px-6 sm:px-10 py-4 flex flex-wrap justify-center items-center gap-4 sm:gap-6">

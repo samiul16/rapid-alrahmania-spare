@@ -43,43 +43,43 @@ const FlashSale = () => {
   const products: Product[] = [
     {
       id: "1",
-      name: "The Vestry Waistcoat",
+      name: "Premium Brake Pads",
       image: "/top-selling/1.png",
       originalPrice: 960,
-      salePrice: 960,
+      salePrice: 576,
       discount: 40,
       rating: 4,
     },
     {
       id: "2",
-      name: "Silk Drape Kaftan",
+      name: "Engine Oil Filter",
       image: "/top-selling/3.png",
       originalPrice: 960,
-      salePrice: 960,
+      salePrice: 672,
       discount: 30,
       rating: 4,
     },
     {
       id: "3",
-      name: "The Pilot Bomber",
+      name: "Shock Absorber Kit",
       image: "/top-selling/5.png",
       originalPrice: 960,
-      salePrice: 960,
+      salePrice: 576,
       discount: 40,
       rating: 4,
     },
     {
       id: "4",
-      name: "Core Knit Jogger",
+      name: "Transmission Fluid",
       image: "/top-selling/7.png",
       originalPrice: 960,
-      salePrice: 960,
+      salePrice: 576,
       discount: 40,
       rating: 4,
     },
     {
       id: "5",
-      name: "3D Puff Logo Cap",
+      name: "Spark Plug Set",
       image: "/top-selling/8.png",
       originalPrice: 800,
       salePrice: 480,
@@ -214,7 +214,9 @@ const FlashSale = () => {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
           {/* Left Side - Title and Countdown */}
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] mb-6">Flash Sale</h2>
+            <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] mb-6">
+              Flash Sale – Limited Time Offers
+            </h2>
 
             {/* Countdown Timer */}
             <div className="flex items-end space-x-4">
