@@ -18,7 +18,7 @@ interface TestimonialCardProps {
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
   return (
     <div className="relative rounded-xl overflow-hidden shadow-xl transition-all duration-300 ease-in-out hover:shadow hover:scale-105 hover:-translate-y-2 cursor-pointer group">
-      <div className="relative h-[550px] bg-[#4BA3E8]">
+      <div className="relative h-[550px] bg-[var(--primary)]">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[#333] z-0">
           <Image
@@ -31,7 +31,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
         </div>
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-l from-sky-600/10 to-sky-600/80" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-l from-sky-600/10 to-[var(--primary)]/80" />
 
         {/* Content */}
         <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end">
@@ -150,7 +150,7 @@ const ClientTestimonials = () => {
   return (
     <div className="bg-white flex flex-col items-center w-full py-20 gap-16">
       <div className="flex flex-col items-center gap-4 max-w-8xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-sky-400 font-anek">
+        <h2 className="text-4xl font-bold text-[var(--primary)] font-anek">
           Client Reviews
         </h2>
       </div>
@@ -187,7 +187,7 @@ const ClientTestimonials = () => {
         <button
           onClick={prevSlide}
           disabled={isAnimating}
-          className="absolute left-2 top-1/2 -translate-y-1/2 w-[50px] h-[50px] rounded-full bg-sky-400/80 hover:bg-sky-500 flex items-center justify-center transform rotate-270 cursor-pointer transition-colors duration-300 z-30"
+          className="absolute left-2 top-1/2 -translate-y-1/2 w-[50px] h-[50px] rounded-full bg-[var(--primary)]/80 hover:bg-[var(--primary)] flex items-center justify-center transform rotate-270 cursor-pointer transition-colors duration-300 z-30"
         >
           <div className="text-white">
             <svg
@@ -211,7 +211,7 @@ const ClientTestimonials = () => {
         <button
           onClick={nextSlide}
           disabled={isAnimating}
-          className="absolute right-2 top-1/2 -translate-y-1/2 w-[50px] h-[50px] rounded-full bg-sky-400/80 hover:bg-sky-500 flex items-center justify-center transform -rotate-270 cursor-pointer transition-colors duration-300 z-30"
+          className="absolute right-2 top-1/2 -translate-y-1/2 w-[50px] h-[50px] rounded-full bg-[var(--primary)]/80 hover:bg-[var(--primary)] flex items-center justify-center transform -rotate-270 cursor-pointer transition-colors duration-300 z-30"
         >
           <div className="text-white">
             <svg
@@ -243,10 +243,10 @@ const ClientTestimonials = () => {
               disabled={isAnimating}
               className={`w-3 h-3 rounded-full transition-all duration-300 ease-in-out hover:scale-125 active:scale-90 ${
                 currentIndex === index
-                  ? "bg-sky-500 shadow-lg scale-110"
+                  ? "bg-[var(--primary)] shadow-lg scale-110"
                   : isAnimating
                   ? "bg-gray-300 cursor-not-allowed"
-                  : "bg-sky-200 hover:bg-sky-400"
+                  : "bg-red-200 hover:bg-[var(--primary)]"
               }`}
             />
           ))}

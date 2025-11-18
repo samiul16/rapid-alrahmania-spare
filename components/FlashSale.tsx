@@ -44,7 +44,7 @@ const FlashSale = () => {
     {
       id: "1",
       name: "The Vestry Waistcoat",
-      image: "/flash-sale/4.jpg",
+      image: "/top-selling/1.png",
       originalPrice: 960,
       salePrice: 960,
       discount: 40,
@@ -53,7 +53,7 @@ const FlashSale = () => {
     {
       id: "2",
       name: "Silk Drape Kaftan",
-      image: "/flash-sale/2.jpg",
+      image: "/top-selling/3.png",
       originalPrice: 960,
       salePrice: 960,
       discount: 30,
@@ -62,7 +62,7 @@ const FlashSale = () => {
     {
       id: "3",
       name: "The Pilot Bomber",
-      image: "/flash-sale/3.jpg",
+      image: "/top-selling/5.png",
       originalPrice: 960,
       salePrice: 960,
       discount: 40,
@@ -71,7 +71,7 @@ const FlashSale = () => {
     {
       id: "4",
       name: "Core Knit Jogger",
-      image: "/flash-sale/1.jpg",
+      image: "/top-selling/7.png",
       originalPrice: 960,
       salePrice: 960,
       discount: 40,
@@ -80,7 +80,7 @@ const FlashSale = () => {
     {
       id: "5",
       name: "3D Puff Logo Cap",
-      image: "/flash-sale/1.jpg",
+      image: "/top-selling/8.png",
       originalPrice: 800,
       salePrice: 480,
       discount: 40,
@@ -199,7 +199,7 @@ const FlashSale = () => {
       <span
         key={index}
         className={`text-sm ${
-          index < rating ? "text-cyan-400" : "text-gray-300"
+          index < rating ? "text-[var(--primary)]" : "text-gray-300"
         }`}
       >
         ★
@@ -214,7 +214,7 @@ const FlashSale = () => {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
           {/* Left Side - Title and Countdown */}
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-4xl font-bold text-sky-400 mb-6">Flash Sale</h2>
+            <h2 className="text-4xl font-bold text-[var(--primary)] mb-6">Flash Sale</h2>
 
             {/* Countdown Timer */}
             <div className="flex items-end space-x-4">
@@ -253,7 +253,7 @@ const FlashSale = () => {
             <motion.button
               onClick={prevSlide}
               disabled={currentSlide === 0}
-              className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-sky-500 text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600 cursor-pointer"
+              className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-[var(--primary)] text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -262,7 +262,7 @@ const FlashSale = () => {
             <motion.button
               onClick={nextSlide}
               disabled={currentSlide === totalSlides - 1}
-              className="w-12 h-12 rounded-lg bg-sky-500 hover:bg-sky-600 text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-sky-500 cursor-pointer"
+              className="w-12 h-12 rounded-lg bg-[var(--primary)] hover:bg-[var(--primary)]/70 text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[var(--primary)] cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -316,8 +316,8 @@ const FlashSale = () => {
               onClick={() => goToSlide(index)}
               className={`rounded-full cursor-pointer transition-all duration-300 ${
                 currentSlide === index
-                  ? "w-14 h-5 bg-sky-500"
-                  : "w-5 h-5 bg-sky-200 hover:bg-sky-300"
+                  ? "w-14 h-5 bg-[var(--primary)]"
+                  : "w-5 h-5 bg-red-200 hover:bg-[var(--primary)]/40"
               }`}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
@@ -349,7 +349,7 @@ const ProductCard: React.FC<{
       <div className="relative mb-4 bg-gray-100 rounded-xl overflow-hidden aspect-square">
         {/* Discount Badge */}
         <div className="absolute top-3 left-3 z-10">
-          <span className="bg-cyan-400 text-white px-2 py-1 rounded text-sm font-semibold">
+          <span className="bg-[var(--primary)]/60 text-white px-2 py-1 rounded text-sm font-semibold">
             -{product.discount}%
           </span>
         </div>
@@ -368,14 +368,14 @@ const ProductCard: React.FC<{
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Eye className="w-4 h-4 text-cyan-400" />
+            <Eye className="w-4 h-4 text-[var(--primary)]" />
           </motion.button>
           <motion.button
             className="p-2 bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors cursor-pointer"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
           >
-            <ShoppingCart className="w-4 h-4 text-cyan-400" />
+            <ShoppingCart className="w-4 h-4 text-[var(--primary)]" />
           </motion.button>
         </div>
 
@@ -403,7 +403,7 @@ const ProductCard: React.FC<{
             <span className="text-sm text-gray-500 line-through">
               AED{product.originalPrice}
             </span>
-            <span className="text-xl font-bold text-cyan-400">
+            <span className="text-xl font-bold text-[var(--primary)]">
               AED{product.salePrice}
             </span>
           </div>

@@ -17,19 +17,20 @@ const HeroSection = () => {
   const slides = [
     {
       image: "/landing/spare-parts-15.jpg",
-      title: "Find parts that fits your car",
-      subtitle: "Find parts that fits your car",
+      title: "Perfect Parts for Your Car",
+      subtitle:
+        "Find the exact components your vehicle needs with fast, accurate matching.",
     },
     {
       image: "/landing/spare-parts-7.jpg",
-      title: "Car Spare Parts & Accessories",
+      title: "Premium Car Parts & Accessories",
       subtitle:
-        "Unleash your brand's potential with meticulously crafted apparel and exquisite embroidery. We combine precision manufacturing with artistic detail to bring your vision to life, reflecting unparalleled quality and style.",
+        "High-quality parts designed with precision to enhance performance, durability, and style.",
     },
     {
       image: "/landing/spare-parts-1.jpg",
-      title: "Find parts that fits your car",
-      subtitle: "",
+      title: "Smart Car Part Finder",
+      subtitle: "Locate the right parts instantly and keep your car running at its best.",
     },
   ];
 
@@ -193,7 +194,7 @@ const HeroSection = () => {
               disabled={isTransitioning}
               className={`h-3 rounded-full transition-all duration-500 cursor-pointer transform hover:scale-125 active:scale-90 ${
                 currentSlide === index
-                  ? "bg-sky-500 w-8 shadow-lg"
+                  ? "bg-[#E9292A] w-8 shadow-lg"
                   : "bg-white/50 hover:bg-white/70 w-3"
               } ${isTransitioning ? "opacity-50 cursor-not-allowed" : ""}`}
               style={{
@@ -216,7 +217,7 @@ const HeroSection = () => {
         >
           <button
             onClick={() => router.push("/products")}
-            className="bg-gradient-to-r from-[#E9292A] to-[#780b0b] text-white font-bold text-md md:text-xl py-4 px-8 rounded-full flex items-center gap-3 hover:from-cyan-500 hover:to-blue-600 transition-all duration-300 cursor-pointer shadow-lg transform hover:scale-105 hover:shadow-xl active:scale-95 min-w-[280px] justify-center"
+            className="bg-gradient-to-r from-[#E9292A] to-[#780b0b] text-white font-bold text-md md:text-xl py-4 px-8 rounded-full flex items-center gap-3 hover:from-[#E9292A]/80 hover:to-[#E9292A]/50 transition-all duration-300 cursor-pointer shadow-lg transform hover:scale-105 hover:shadow-xl active:scale-95 min-w-[280px] justify-center"
             style={{
               boxShadow:
                 "0 8px 25px rgba(255, 255, 255, 0.4), 0 4px 12px rgba(255, 255, 255, 0.3)",
