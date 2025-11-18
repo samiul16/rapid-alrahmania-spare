@@ -267,10 +267,10 @@ const GetStarted = () => {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <label
-                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none ${
                       formData.fullName || focusedField === "fullName"
                         ? "-translate-y-1/2 text-xs text-white bg-white/10 rounded backdrop-blur-sm"
                         : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"
@@ -292,10 +292,10 @@ const GetStarted = () => {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <label
-                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none ${
                       formData.phone || focusedField === "phone"
                         ? "-translate-y-1/2 text-xs text-white bg-white/10 backdrop-blur-sm rounded"
                         : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"
@@ -317,10 +317,10 @@ const GetStarted = () => {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <label
-                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none ${
                       formData.email || focusedField === "email"
                         ? "-translate-y-1/2 text-xs text-white bg-white/10 backdrop-blur-sm rounded"
                         : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"
@@ -380,10 +380,10 @@ const GetStarted = () => {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <label
-                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none ${
                       formData.message || focusedField === "message"
                         ? "-translate-y-1/2 text-xs text-white bg-white/10 backdrop-blur-sm rounded"
                         : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"

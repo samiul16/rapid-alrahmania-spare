@@ -150,7 +150,7 @@ const ClientTestimonials = () => {
   return (
     <div className="bg-white flex flex-col items-center w-full py-20 gap-16">
       <div className="flex flex-col items-center gap-4 max-w-8xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-[var(--primary)] font-anek">
+        <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] font-anek">
           Client Reviews
         </h2>
       </div>

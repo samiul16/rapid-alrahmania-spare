@@ -60,7 +60,7 @@ const ExclusiveDeals = () => {
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-20 py-12">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#E9292A] mb-4">
+          <h2 className="text-5xl sm:text-5xl font-bold text-[#E9292A] mb-4">
             Exclusive Deals on Every Part
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
