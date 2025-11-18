@@ -74,7 +74,7 @@ const CategoriesSection = () => {
 
         {/* Horizontal Rectangle Container */}
         <motion.div
-          className="bg-[#E9292A] rounded-4xl shadow-2xl overflow-hidden py-12"
+          className="bg-[#E9292A] rounded-4xl shadow-[10px_10px_30px_0_rgba(233,41,42,0.5)] overflow-hidden py-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -85,7 +85,7 @@ const CategoriesSection = () => {
             {categories.map((category, index) => (
               <motion.div
                 key={category.id}
-                className={`group cursor-pointer flex-1 py-16 sm:py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center bg-white/10 transition-all duration-300 ${
+                className={`group cursor-pointer flex-1 py-16 sm:py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center hover:bg-white/10 transition-all duration-300 ${
                   index !== categories.length - 1
                     ? "border-r border-white/50"
                     : ""
