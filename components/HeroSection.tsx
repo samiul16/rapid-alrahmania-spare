@@ -16,22 +16,20 @@ const HeroSection = () => {
   // Array of slide content
   const slides = [
     {
-      image: "/landing/hero-1.png",
-      title: "Premium Quality Manufacturing Excellence",
-      subtitle:
-        "Experience world-class apparel design and production. From initial concept to completion, we deliver meticulously crafted clothing that meets international standards for quality and style.",
+      image: "/landing/spare-parts-15.jpg",
+      title: "Find parts that fits your car",
+      subtitle: "Find parts that fits your car",
     },
     {
-      image: "/landing/hero-2.jpeg",
-      title: "Al Buraq: Soaring Beyond Expectations in Garment Excellence",
+      image: "/landing/spare-parts-7.jpg",
+      title: "Car Spare Parts & Accessories",
       subtitle:
         "Unleash your brand's potential with meticulously crafted apparel and exquisite embroidery. We combine precision manufacturing with artistic detail to bring your vision to life, reflecting unparalleled quality and style.",
     },
     {
-      image: "/landing/hero-3.jpg",
-      title: "Premium Apparel & Embroidery, Delivered with Al Buraq Precision",
-      subtitle:
-        "From concept to final stitch, experience world-class design and production tailored to your exact needs. Our commitment to quality ensures every garment and every embroidery detail meets the highest international standards.",
+      image: "/landing/spare-parts-1.jpg",
+      title: "Find parts that fits your car",
+      subtitle: "",
     },
   ];
 
@@ -211,21 +209,21 @@ const HeroSection = () => {
 
         {/* Enhanced CTA Button with AOS */}
         <div
-          className="mt-16"
+          className="mt-20"
           data-aos="zoom-in"
           data-aos-delay="600"
           data-aos-duration="800"
         >
           <button
             onClick={() => router.push("/products")}
-            className="bg-gradient-to-r from-cyan-400/90 to-blue-500 text-white font-bold text-md md:text-xl py-4 px-8 rounded-full flex items-center gap-3 hover:from-cyan-500 hover:to-blue-600 transition-all duration-300 cursor-pointer shadow-lg transform hover:scale-105 hover:shadow-xl active:scale-95 min-w-[280px] justify-center"
+            className="bg-gradient-to-r from-[#E9292A] to-[#780b0b] text-white font-bold text-md md:text-xl py-4 px-8 rounded-full flex items-center gap-3 hover:from-cyan-500 hover:to-blue-600 transition-all duration-300 cursor-pointer shadow-lg transform hover:scale-105 hover:shadow-xl active:scale-95 min-w-[280px] justify-center"
             style={{
               boxShadow:
-                "0 8px 25px rgba(6, 182, 212, 0.4), 0 4px 12px rgba(59, 130, 246, 0.3)",
+                "0 8px 25px rgba(255, 255, 255, 0.4), 0 4px 12px rgba(255, 255, 255, 0.3)",
             }}
           >
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-              <ArrowRight className="w-5 h-5 text-cyan-500" />
+              <ArrowRight className="w-5 h-5 text-red-500" />
             </div>
             EXPLORE OUR PRODUCTS
           </button>
