@@ -33,101 +33,102 @@ const HotProductsSection = () => {
 
   const categories = [
     "All",
-    "Sweater",
-    "Head Gear",
-    "Gloves",
-    "Shawls & Wraps",
-    "Essentials",
+    "Brake System",
+    "Engine Parts",
+    "Body Parts",
+    "Cooling System",
+    "Fuel System",
   ];
 
   const products: Product[] = [
     {
       id: 1,
-      title: "Hoodie For Women",
+      title: "Car AC Compressor",
       subtitle:
-        "Supreme comfort meets lasting durability. Perfect for cold-weather layering, designed with ultra-soft fleece and a tailored fit.",
-      price: 290,
-      rating: 5.0,
-      reviews: 12,
-      image: "/products/garments-hot-product-1.jpg",
-      category: "Sweater",
+        "Car AC Compressor that is designed to improve the performance of your car's air conditioning system.",
+      price: 180,
+      rating: 4.8,
+      reviews: 24,
+      image: "/products/Car AC Compressor.jpg",
+      category: "Brake System",
     },
     {
       id: 2,
-      title: "Jacket For Men",
+      title: "Premium Disc Brake Rotors",
       subtitle:
-        "Seamlessly transition from work to weekend. A classic, smart-casual design crafted with attention to fit and high-end finishing.",
-      price: 290,
-      rating: 5.0,
-      reviews: 12,
-      image: "/products/garments-hot-product-2.jpg",
-      category: "Sweater",
+        "Premium Disc Brake Rotors that is designed to improve the performance of your car's disc brake rotors.",
+      price: 280,
+      rating: 4.6,
+      reviews: 32,
+      image: "/products/Premium Disc Brake Rotors.png",
+      category: "Cooling System",
     },
     {
       id: 3,
-      title: "Girls Woolen Hat",
+      title: "Universal Side Mirror Indicator Light",
       subtitle:
-        "Snug warmth for winter adventures. Crafted from soft, breathable wool to keep her comfortable and protected in the cold.",
-      price: 290,
-      rating: 5.0,
-      reviews: 12,
-      image: "/products/garments-hot-product-3.jpg",
-      category: "Head Gear",
+        "Universal Side Mirror Indicator Light that is designed to improve the performance of your car's side mirror indicator light.",
+      price: 45,
+      rating: 4.9,
+      reviews: 56,
+      image: "/products/Universal Side Mirror Indicator Light.png",
+      category: "Engine Parts",
     },
     {
       id: 4,
-      title: "Winter Gloves",
+      title: "Multi-Function Steering Control Buttons",
       subtitle:
-        "Supreme comfort meets lasting durability. Perfect for cold-weather layering, designed with ultra-soft fleece and a tailored fit.",
-      price: 150,
-      rating: 4.8,
-      reviews: 8,
-      image: "/products/garments-hot-product-1.jpg",
-      category: "Gloves",
+        "Multi-Function Steering Control Buttons that is designed to improve the performance of your car's steering control buttons.",
+      price: 320,
+      rating: 4.7,
+      reviews: 18,
+      image: "/products/Multi-Function Steering Control Buttons.png",
+      category: "Body Parts",
     },
+
     {
       id: 5,
-      title: "Kashmiri Shaal",
+      title: "Fuel Pump Module",
       subtitle:
-        "Snug warmth for winter adventures. Crafted from soft, breathable wool to keep her comfortable and protected in the cold.",
-      price: 450,
-      rating: 5.0,
-      reviews: 20,
-      image: "/products/garments-hot-product-2.jpg",
-      category: "Shaal",
+        "Reliable fuel pump module for consistent fuel delivery. Electric pump with high-flow capacity and built-in pressure regulator.",
+      price: 220,
+      rating: 4.8,
+      reviews: 41,
+      image: "/products/fuel pump.webp",
+      category: "Fuel System",
     },
     {
       id: 6,
-      title: "Traditional Sweater",
+      title: "Brake Pad Set",
       subtitle:
-        "Seamlessly transition from work to weekend. A classic, smart-casual design crafted with attention to fit and high-end finishing.",
-      price: 320,
+        "Premium ceramic brake pads for smooth, quiet braking. Low dust formula with excellent heat resistance and extended wear life.",
+      price: 85,
       rating: 4.9,
-      reviews: 15,
-      image: "/products/garments-hot-product-3.jpg",
-      category: "Bangladeshi",
+      reviews: 67,
+      image: "/products/break pad.webp",
+      category: "Brake System",
     },
     {
       id: 7,
-      title: "Cotton T-Shirt",
+      title: "LED Fog Light",
       subtitle:
-        "Seamlessly transition from work to weekend. A classic, smart-casual design crafted with attention to fit and high-end finishing.",
-      price: 180,
+        "LED Fog Light that is designed to improve the performance of your car's fog light.",
+      price: 35,
       rating: 4.7,
-      reviews: 10,
-      image: "/products/garments-hot-product-1.jpg",
-      category: "Sweater",
+      reviews: 89,
+      image: "/products/LED Fog Light kit.png",
+      category: "Engine Parts",
     },
     {
       id: 8,
-      title: "Woolen Scarf",
+      title: "Side Mirror Assembly",
       subtitle:
-        "Supreme comfort meets lasting durability. Perfect for cold-weather layering, designed with ultra-soft fleece and a tailored fit.",
-      price: 220,
-      rating: 4.9,
-      reviews: 18,
-      image: "/products/garments-hot-product-2.jpg",
-      category: "Shaal",
+        "Complete side mirror assembly with power adjustment. Clear glass with wide-angle view and heated defogging capability.",
+      price: 150,
+      rating: 4.5,
+      reviews: 29,
+      image: "/products/side mirror.jpg",
+      category: "Body Parts",
     },
   ];
 
@@ -253,20 +254,20 @@ const HotProductsSection = () => {
           variants={headerVariants}
         >
           {/* Title */}
-          <h2 className="text-4xl sm:text-4xl font-bold text-sky-500 text-shadow-md text-center">
-            Our Hot Products
+          <h2 className="text-5xl sm:text-5xl font-bold text-[#E9292A] text-shadow-md text-center">
+            Hot Selling Parts
           </h2>
 
-          {/* Category Filter - Updated with exact dimensions */}
-          <div className="bg-white rounded-[50px] shadow border border-sky-300 px-6 sm:px-10 py-4 flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+          {/* Category Filter */}
+          <div className="bg-white rounded-[50px] shadow-xl border border-[#E9292A]/20 px-6 sm:px-10 py-4 flex flex-wrap justify-center items-center gap-4 sm:gap-6">
             {categories.map((category) => (
               <motion.button
                 key={category}
                 onClick={() => handleCategoryChange(category)}
                 className={`rounded-[50px] text-base sm:text-lg font-bold transition-all duration-300 flex items-center justify-center cursor-pointer whitespace-nowrap ${
                   activeCategory === category
-                    ? "min-w-40 h-12 px-4 bg-sky-500 text-white shadow-md" // Changed to min-width to accommodate longer text
-                    : "text-black hover:text-neutral-900 px-4 py-2"
+                    ? "min-w-40 h-12 px-4 bg-[#E9292A] text-white shadow-md"
+                    : "text-black/70 hover:text-[#E9292A] px-4 py-2"
                 }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -280,12 +281,12 @@ const HotProductsSection = () => {
 
         {/* Carousel Container */}
         <div className="relative">
-          {/* Navigation Arrows - Centered on cards */}
+          {/* Navigation Arrows */}
           {totalSlides > 1 && (
             <>
               <motion.button
                 onClick={goToPrevSlide}
-                className="absolute left-5 top-[50%] -translate-y-1/2 z-10 w-12 h-12 bg-sky-500 hover:bg-sky-600 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 cursor-pointer -ml-6 lg:-ml-20"
+                className="absolute left-5 top-[50%] -translate-y-1/2 z-10 w-12 h-12 bg-[#E9292A] hover:bg-[#d12621] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 cursor-pointer -ml-6 lg:-ml-20"
                 style={{ marginTop: "15px" }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -295,7 +296,7 @@ const HotProductsSection = () => {
 
               <motion.button
                 onClick={goToNextSlide}
-                className="absolute right-5 top-[50%] -translate-y-1/2 z-10 w-12 h-12 bg-sky-500 hover:bg-sky-600 text-white rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all duration-300 -mr-6 lg:-mr-20"
+                className="absolute right-5 top-[50%] -translate-y-1/2 z-10 w-12 h-12 bg-[#E9292A] hover:bg-[#d12621] text-white rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all duration-300 -mr-6 lg:-mr-20"
                 style={{ marginTop: "15px" }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -319,7 +320,7 @@ const HotProductsSection = () => {
                 {getCurrentProducts().map((product) => (
                   <motion.div
                     key={product.id}
-                    className="group bg-white rounded-[20px] shadow-[4px_6px_16px_0px_rgba(0,0,0,0.10)] overflow-hidden hover:shadow-[4px_10px_24px_0px_rgba(0,0,0,0.15)] transition-all duration-300"
+                    className="group bg-white rounded-[20px] shadow-[12px_12px_16px_0px_rgba(0,0,0,0.10)] overflow-hidden hover:shadow-[4px_10px_24px_0px_rgba(0,0,0,0.15)] transition-all duration-300"
                     variants={cardVariants}
                     whileHover={{ y: -8 }}
                   >
@@ -336,24 +337,24 @@ const HotProductsSection = () => {
                       <div className="absolute top-3 right-3 flex flex-col gap-2">
                         <motion.button
                           onClick={() => toggleWishlist(product.id)}
-                          className="w-8 h-8 bg-white rounded-full shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] flex items-center justify-center hover:bg-sky-50 cursor-pointer transition-colors"
+                          className="w-8 h-8 bg-white rounded-full shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] flex items-center justify-center hover:bg-red-50 cursor-pointer transition-colors"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                         >
                           <Heart
                             className={`w-4 h-4 ${
                               wishlist.includes(product.id)
-                                ? "fill-sky-500 text-sky-500"
-                                : "text-sky-500"
+                                ? "fill-[#E9292A] text-[#E9292A]"
+                                : "text-[#E9292A]"
                             }`}
                           />
                         </motion.button>
                         <motion.button
-                          className="w-8 h-8 bg-white rounded-full shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] flex items-center justify-center hover:bg-sky-50 cursor-pointer transition-colors"
+                          className="w-8 h-8 bg-white rounded-full shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] flex items-center justify-center hover:bg-red-50 cursor-pointer transition-colors"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                         >
-                          <Eye className="w-4 h-4 text-sky-500" />
+                          <Eye className="w-4 h-4 text-[#E9292A]" />
                         </motion.button>
                       </div>
                     </div>
@@ -364,13 +365,13 @@ const HotProductsSection = () => {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <div className="flex items-center gap-1">
-                            <Star className="w-5 h-5 fill-sky-500 text-sky-500" />
+                            <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
                             <span className="text-black/50 font-bold text-sm sm:text-base">
                               {product.rating.toFixed(1)} ({product.reviews})
                             </span>
                           </div>
                         </div>
-                        <span className="text-sky-500 font-bold text-md text-shadow-sm sm:text-base">
+                        <span className="text-[#E9292A] font-bold text-md text-shadow-sm sm:text-base">
                           AED {product.price}
                         </span>
                       </div>
@@ -388,7 +389,7 @@ const HotProductsSection = () => {
                       {/* Add to Cart Button */}
                       <motion.button
                         onClick={() => handleAddToCart(product)}
-                        className="w-full py-2.5 sm:py-3 rounded-[50px] bg-gradient-to-r from-cyan-300 to-sky-500 border border-sky-500 font-bold text-base sm:text-lg hover:bg-sky-600 text-white transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                        className="w-full py-2.5 sm:py-3 rounded-[50px] bg-gradient-to-r from-[#E9292A] to-[#943835] border border-[#E9292A] font-bold text-base sm:text-lg hover:bg-[#d12621] text-white transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
@@ -411,8 +412,8 @@ const HotProductsSection = () => {
                   onClick={() => setCurrentSlide(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${
                     currentSlide === index
-                      ? "bg-sky-500 w-8"
-                      : "bg-sky-500/30 w-2 hover:bg-sky-500/50"
+                      ? "bg-[#E9292A] w-8"
+                      : "bg-[#E9292A]/30 w-2 hover:bg-[#E9292A]/50"
                   }`}
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
