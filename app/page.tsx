@@ -16,6 +16,7 @@ import DownloadOurApp from "@/components/DownloadOurApp";
 import Stats from "@/components/Stats";
 import CategoriesSection from "@/components/CategoriesSection";
 import ExclusiveDeals from "@/components/ExclusiveDeals";
+import GetStarted from "@/components/GetStarted";
 
 export default function Home() {
   useEffect(() => {
@@ -63,7 +64,7 @@ export default function Home() {
             <DownloadOurApp />
           </div>
           <div data-aos="fade-up" data-aos-delay="200">
-            {/* <Stats /> */}
+            <GetStarted />
           </div>
         </div>
       </main>

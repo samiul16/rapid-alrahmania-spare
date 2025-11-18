@@ -214,7 +214,7 @@ const FlashSale = () => {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
           {/* Left Side - Title and Countdown */}
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-4xl font-bold text-[var(--primary)] mb-6">Flash Sale</h2>
+            <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] mb-6">Flash Sale</h2>
 
             {/* Countdown Timer */}
             <div className="flex items-end space-x-4">

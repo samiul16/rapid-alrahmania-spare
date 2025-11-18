@@ -195,7 +195,7 @@ const TopSellingCarousel = () => {
     };
     return (
       <motion.div
-        className="group relative bg-sky-50 rounded-xl border border-zinc-300 overflow-hidden transition-all duration-300"
+        className="group relative bg-white rounded-xl border border-zinc-300 overflow-hidden transition-all duration-300"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         whileHover={{
@@ -206,7 +206,7 @@ const TopSellingCarousel = () => {
         transition={{ duration: 0.3 }}
       >
         {/* Image Container */}
-        <div className="relative h-52 bg-gradient-to-br from-sky-50 to-sky-200 overflow-hidden flex items-center justify-center">
+        <div className="relative h-52 bg-gradient-to-br from-red-50 to-red-200 overflow-hidden flex items-center justify-center">
           <Image
             src={product.image}
             alt={product.name}
@@ -299,7 +299,7 @@ const TopSellingCarousel = () => {
             variants={headerVariants}
           >
             <div className="space-y-2">
-              <h2 className="text-4xl sm:text-4xl font-bold text-[var(--primary)] text-shadow-md tracking-wide">
+              <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] text-shadow-md tracking-wide">
                 Top Selling
               </h2>
               <p className="text-lg sm:text-xl text-gray-700">
@@ -373,7 +373,7 @@ const TopSellingCarousel = () => {
                 className={`rounded-full transition-all duration-300 ${
                   currentSlide === index
                     ? "w-14 h-5 bg-[var(--primary)]"
-                    : "w-5 h-5 bg-sky-200 hover:bg-[var(--primary)]/40"
+                    : "w-5 h-5 bg-red-200 hover:bg-[var(--primary)]/40"
                 }`}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}

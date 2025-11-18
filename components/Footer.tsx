@@ -6,21 +6,21 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--primary)]/95 text-white py-12 rounded-t-4xl">
-      <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-20 pt-4">
+    <footer className="bg-[#E9292A] text-white py-12">
+      <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-16 pt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo and Company Info */}
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/rahmania-logo.png"
+                src="/white-logo.png"
                 alt="Alburaq"
-                width={120}
-                height={40}
+                width={110}
+                height={30}
                 className="mb-4 rounded-lg"
               />
             </div>
-            <p className="text-lg text-gray-100 mb-6">
+            <p className="text-xl text-gray-100 mb-6">
               Alburaq is your go-to destination for quality products at
               unbeatable prices.
             </p>
@@ -95,12 +95,12 @@ const Footer = () => {
 
           {/* Help & Support Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Help & Support</h3>
+            <h3 className="text-xl font-semibold mb-4">Help & Support</h3>
             <ul className="space-y-4">
               <li>
                 <Link
                   href="/help-support"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   Shipping Info
                 </Link>
@@ -108,7 +108,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/help-support"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   Returns
                 </Link>
@@ -116,7 +116,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/help-support"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   How to Order
                 </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/help-support"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   How to confirm
                 </Link>
@@ -134,12 +134,12 @@ const Footer = () => {
 
           {/* Company Info Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company Info</h3>
+            <h3 className="text-xl font-semibold mb-4">Company Info</h3>
             <ul className="space-y-4">
               <li>
                 <Link
                   href="/about"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   About Us
                 </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/career"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   Careers
                 </Link>
@@ -165,7 +165,7 @@ const Footer = () => {
                   href="https://www.google.com/maps/search/?api=1&query=Al+Rashidiya+1+Ajman+United+Arab+Emirates"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   Store Location
                 </Link>
@@ -173,7 +173,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/help-support"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   How to Track
                 </Link>
@@ -183,7 +183,7 @@ const Footer = () => {
 
           {/* Customer Care Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Customer Care</h3>
+            <h3 className="text-xl font-semibold mb-4">Customer Care</h3>
             <ul className="space-y-4">
               <li>
                 <Link
@@ -196,7 +196,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/terms-policy"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   Terms & Policy
                 </Link>
@@ -204,7 +204,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   Contact Us
                 </Link>
@@ -212,7 +212,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/gift-card"
-                  className="text-lg text-gray-100 hover:text-white transition-colors"
+                  className="text-xl text-gray-100 hover:text-white transition-colors"
                 >
                   Gift Card
                 </Link>
@@ -222,7 +222,7 @@ const Footer = () => {
 
           {/* Contact Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-xl font-semibold mb-4">Contact</h3>
             <div className="space-y-7">
               <div className="flex items-start space-x-2">
                 <svg
@@ -232,7 +232,7 @@ const Footer = () => {
                 >
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
-                <p className="text-lg text-gray-100">
+                <p className="text-xl text-gray-100">
                   Al Rashidiya 1 - Ajman - United Arab Emirates
                 </p>
               </div>
@@ -245,7 +245,7 @@ const Footer = () => {
                 >
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                 </svg>
-                <p className="text-lg text-gray-100">+971 54 324 7559</p>
+                <p className="text-xl text-gray-100">+971 54 324 7559</p>
               </div>
 
               <div className="flex items-center space-x-2">
@@ -256,14 +256,14 @@ const Footer = () => {
                 >
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
-                <p className="text-lg text-gray-100">marium.marufa@gmail.com</p>
+                <p className="text-xl text-gray-100">marium.marufa@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t-2 border-sky-400 mt-8 pt-6">
+        <div className="border-t-2 border-red-400 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-4 mb-4 md:mb-0">
               <p className="text-lg text-gray-100">
