@@ -205,7 +205,7 @@ const ExpandableSearchBar: React.FC<ExpandableSearchBarProps> = ({
       <span>
         {parts.map((part, index) =>
           part.toLowerCase() === query.toLowerCase() ? (
-            <span key={index} className="font-semibold text-sky-500">
+            <span key={index} className="font-semibold text-[#E9292A]">
               {part}
             </span>
           ) : (
@@ -218,7 +218,7 @@ const ExpandableSearchBar: React.FC<ExpandableSearchBarProps> = ({
 
   const Loading = () => (
     <div className="flex items-center justify-center">
-      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-sky-500"></div>
+      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-[#E9292A]"></div>
       <span className="ml-2">Searching...</span>
     </div>
   );
@@ -234,14 +234,14 @@ const ExpandableSearchBar: React.FC<ExpandableSearchBarProps> = ({
             className={`${iconColor} ${hoverIconColor} p-2 transition-all cursor-pointer hover:bg-white/10 rounded-full`}
             aria-label="Search"
           >
-            <Search className={`h-6 w-6 stroke-2 text-sky-400`} />
+            <Search className={`h-6 w-6 stroke-2 text-[#E9292A]/80`} />
           </button>
         )}
 
         <div
           className={`flex items-center bg-white transition-all duration-200 ${
             isExpanded
-              ? "w-80 px-3 py-1 rounded-full border-2 border-sky-400 transition-all hover:shadow-md shadow-lg"
+              ? "w-80 px-3 py-1 rounded-full border-2 border-[#E9292A] transition-all hover:shadow-md shadow-lg"
               : "w-0 overflow-hidden"
           }`}
           onClick={(e) => e.stopPropagation()}
@@ -301,7 +301,7 @@ const ExpandableSearchBar: React.FC<ExpandableSearchBarProps> = ({
           onClick={(e) => e.stopPropagation()}
         >
           {isLoading ? (
-            <div className="py-8 text-center text-sky-500 font-medium text-sm">
+            <div className="py-8 text-center text-[#E9292A] font-medium text-sm">
               <Loading />
             </div>
           ) : searchResults.length > 0 ? (

@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Buraq Garment",
-  description: "Buraq Garment",
+  title: "Alrahamania",
+  description: "Alrahamania",
 };
 
 export default function RootLayout({
@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/brand-logo.png" sizes="any" />
-        <link rel="icon" href="/brand-logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/brand-logo.png" />
+        <link rel="icon" href="/rahmania-logo.png" sizes="any" />
+        <link rel="icon" href="/rahmania-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/rahmania-logo.png" />
       </head>
       <body
         className={`${poppins.variable} font-poppins antialiased bg-white overflow-x-hidden!`}

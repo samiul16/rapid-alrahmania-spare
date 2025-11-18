@@ -187,7 +187,7 @@ const Navbar = () => {
   const getNavbarStyles = () => {
     return {
       navBg: isScrolled ? "bg-black/20 backdrop-blur-md" : "bg-transparent",
-      textColor: isHomePage ? "text-white" : "text-sky-400/60",
+      textColor: isHomePage ? "text-white" : "text-[#E9292A]/60",
       hoverColor: "hover:text-[var(--primary)]/70",
       activeColor: "text-[var(--primary)] font-semibold",
     };
@@ -206,7 +206,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/brand-logo.png"
+                src="/rahmania-logo.png"
                 alt="Company Logo"
                 width={600}
                 height={600}
@@ -389,7 +389,7 @@ const Navbar = () => {
                 className={`${styles.textColor} group-hover:text-[var(--primary)] hover:bg-white/10 p-2 rounded-full transition-colors cursor-pointer relative`}
                 aria-label="Shopping Cart"
               >
-                <ShoppingCart className="w-5 h-5 text-sky-400" />
+                <ShoppingCart className="w-5 h-5 text-[#E9292A]" />
                 {/* Cart Badge - Only show if there are items */}
                 {totalItems > 0 && (
                   <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-semibold animate-pulse">
@@ -408,7 +408,7 @@ const Navbar = () => {
                 className={`${styles.textColor} group-hover:text-[var(--primary)] hover:bg-white/10 p-2 rounded-full transition-colors cursor-pointer`}
                 aria-label="User Account"
               >
-                <User className="w-5 h-5 text-sky-400" />
+                <User className="w-5 h-5 text-[#E9292A]" />
               </button>
 
               <UserMenu
@@ -430,7 +430,7 @@ const Navbar = () => {
                 setIsMobileMenuOpen(!isMobileMenuOpen);
                 setIsSearchOpen(false); // Close search when mobile menu opens
               }}
-              className={`relative w-11 h-11 ${styles.textColor} group-hover:text-sky-600 hover:opacity-50 transition-colors flex items-center justify-center cursor-pointer`}
+              className={`relative w-11 h-11 ${styles.textColor} group-hover:text-[#E9292A] hover:opacity-50 transition-colors flex items-center justify-center cursor-pointer`}
               aria-expanded={isMobileMenuOpen}
               aria-label="Toggle mobile menu"
             >
@@ -493,7 +493,7 @@ const Navbar = () => {
         <div className="absolute top-6 right-6">
           <button
             onClick={() => setIsMobileMenuOpen(false)}
-            className="w-10 h-10 text-white hover:text-sky-400 transition-colors flex items-center justify-center rounded-full hover:bg-white/10 cursor-pointer"
+            className="w-10 h-10 text-white hover:text-[#E9292A] transition-colors flex items-center justify-center rounded-full hover:bg-white/10 cursor-pointer"
             aria-label="Close mobile menu"
           >
             <svg

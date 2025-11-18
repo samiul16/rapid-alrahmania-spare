@@ -13,11 +13,11 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/brand-logo.png"
+                src="/rahmania-logo.png"
                 alt="Alburaq"
                 width={120}
                 height={40}
-                className="mb-4 rounded-lg shadow-lg"
+                className="mb-4 rounded-lg"
               />
             </div>
             <p className="text-lg text-gray-100 mb-6">
