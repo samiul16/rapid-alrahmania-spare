@@ -74,7 +74,7 @@ const CategoriesSection = () => {
 
         {/* Horizontal Rectangle Container */}
         <motion.div
-          className="bg-[#E9292A] rounded-4xl shadow-[10px_10px_30px_0_rgba(233,41,42,0.5)] overflow-hidden py-12"
+          className="bg-gradient-to-b from-[#E9292A] to-red-700 rounded-4xl shadow-[10px_10px_30px_0_rgba(233,41,42,0.5)] overflow-hidden py-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
