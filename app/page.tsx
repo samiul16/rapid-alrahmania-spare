@@ -36,9 +36,7 @@ export default function Home() {
           <div data-aos="fade-up" data-aos-delay="100">
             <CategoriesSection />
           </div>
-          <div data-aos="fade-up" data-aos-delay="100">
-            <OurOffer />
-          </div>
+
           <div data-aos="fade-up" data-aos-delay="200">
             <OurProducts />
           </div>
