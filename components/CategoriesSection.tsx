@@ -85,7 +85,7 @@ const CategoriesSection = () => {
             {categories.map((category, index) => (
               <motion.div
                 key={category.id}
-                className={`group cursor-pointer flex-1 py-16 sm:py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center hover:bg-white/10 transition-all duration-300 ${
+                className={`group cursor-pointer flex-1 py-16 sm:py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center bg-white/10 transition-all duration-300 ${
                   index !== categories.length - 1
                     ? "border-r border-white/50"
                     : ""
