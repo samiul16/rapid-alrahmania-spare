@@ -8,18 +8,10 @@ const DownloadOurApp = () => {
   return (
     <div className="py-20 bg-white sm:px-6 lg:px-8">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-16">
-        <div className="relative overflow-hidden rounded-3xl">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image
-              src="/download-app/background.png"
-              alt="Download App Background"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-
+        <div
+          className="relative overflow-hidden rounded-3xl"
+          style={{ backgroundColor: "var(--primary)" }}
+        >
           <div className="relative py-16 px-12 lg:px-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               {/* Left Side - Phone Mockups */}
@@ -43,7 +35,7 @@ const DownloadOurApp = () => {
                     />
 
                     {/* Best Mobile App Badge */}
-                    <div className="absolute top-[40%] -left-8 md:-left-16 backdrop-blur-sm text-white rounded-xl shadow-2xl">
+                    {/* <div className="absolute top-[40%] -left-8 md:-left-16 backdrop-blur-sm text-white rounded-xl shadow-2xl">
                       <div className="flex items-center space-x-3">
                         <Image
                           src="/download-app/tablet-shape.png"
@@ -53,7 +45,7 @@ const DownloadOurApp = () => {
                           className="object-contain drop-shadow-2xl"
                         />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Secondary Phone */}
@@ -103,7 +95,7 @@ const DownloadOurApp = () => {
                     href="https://apps.apple.com/app/id123456789"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-3 bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 min-w-[160px] rounded-full"
+                    className="flex items-center justify-center space-x-3 bg-red-500 hover:bg-red-600 text-white px-8 py-4 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 min-w-[160px] rounded-full"
                   >
                     <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                       <Apple className="w-5 h-5 text-black" />

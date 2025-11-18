@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-sky-500 text-white py-12 rounded-t-4xl">
+    <footer className="bg-[var(--primary)]/95 text-white py-12 rounded-t-4xl">
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-20 pt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo and Company Info */}
@@ -32,7 +32,7 @@ const Footer = () => {
                 href="https://x.com/home"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] border-2 border-sky-300 rounded-full flex items-center justify-center hover:bg-sky-400 hover:bg-opacity-20 transition-all aspect-square"
+                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] border-2 border-[var(--primary)] rounded-full flex items-center justify-center hover:bg-[var(--primary)] hover:bg-opacity-20 transition-all aspect-square"
               >
                 <svg
                   className="w-3 h-3 text-sky-200 flex-shrink-0"
@@ -48,7 +48,7 @@ const Footer = () => {
                 href="https://www.facebook.com/Alburaqemb/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] bg-sky-400 rounded-full flex items-center justify-center hover:bg-sky-400 transition-colors aspect-square"
+                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] bg-[var(--primary)] rounded-full flex items-center justify-center hover:bg-[var(--primary)] transition-colors aspect-square"
               >
                 <svg
                   className="w-4 h-4 text-white flex-shrink-0"
@@ -64,7 +64,7 @@ const Footer = () => {
                 href="https://www.youtube.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] border-2 border-sky-400 rounded-full flex items-center justify-center hover:bg-sky-400 hover:bg-opacity-20 transition-all aspect-square"
+                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] border-2 border-[var(--primary)] rounded-full flex items-center justify-center hover:bg-[var(--primary)] hover:bg-opacity-20 transition-all aspect-square"
               >
                 <svg
                   className="w-4 h-4 text-sky-200 flex-shrink-0"
@@ -80,7 +80,7 @@ const Footer = () => {
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] border-2 border-sky-400 rounded-full flex items-center justify-center hover:bg-sky-400 hover:bg-opacity-20 transition-all aspect-square"
+                className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] border-2 border-[var(--primary)] rounded-full flex items-center justify-center hover:bg-[var(--primary)] hover:bg-opacity-20 transition-all aspect-square"
               >
                 <svg
                   className="w-3 h-3 text-sky-200 flex-shrink-0"

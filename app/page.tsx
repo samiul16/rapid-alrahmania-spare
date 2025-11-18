@@ -63,7 +63,7 @@ export default function Home() {
             <DownloadOurApp />
           </div>
           <div data-aos="fade-up" data-aos-delay="200">
-            <Stats />
+            {/* <Stats /> */}
           </div>
         </div>
       </main>
