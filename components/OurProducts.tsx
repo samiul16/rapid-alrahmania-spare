@@ -267,7 +267,7 @@ const HotProductsSection = () => {
                 className={`rounded-[50px] text-base sm:text-lg font-bold transition-all duration-300 flex items-center justify-center cursor-pointer whitespace-nowrap ${
                   activeCategory === category
                     ? "min-w-40 h-12 px-4 bg-[#E9292A] text-white shadow-md"
-                    : "text-black hover:text-[#E9292A] px-4 py-2"
+                    : "text-black/70 hover:text-[#E9292A] px-4 py-2"
                 }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -320,7 +320,7 @@ const HotProductsSection = () => {
                 {getCurrentProducts().map((product) => (
                   <motion.div
                     key={product.id}
-                    className="group bg-white rounded-[20px] shadow-[4px_6px_16px_0px_rgba(0,0,0,0.10)] overflow-hidden hover:shadow-[4px_10px_24px_0px_rgba(0,0,0,0.15)] transition-all duration-300"
+                    className="group bg-white rounded-[20px] shadow-[12px_12px_16px_0px_rgba(0,0,0,0.10)] overflow-hidden hover:shadow-[4px_10px_24px_0px_rgba(0,0,0,0.15)] transition-all duration-300"
                     variants={cardVariants}
                     whileHover={{ y: -8 }}
                   >
@@ -389,7 +389,7 @@ const HotProductsSection = () => {
                       {/* Add to Cart Button */}
                       <motion.button
                         onClick={() => handleAddToCart(product)}
-                        className="w-full py-2.5 sm:py-3 rounded-[50px] bg-gradient-to-r from-[#E9292A] to-[#d12621] border border-[#E9292A] font-bold text-base sm:text-lg hover:bg-[#d12621] text-white transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                        className="w-full py-2.5 sm:py-3 rounded-[50px] bg-gradient-to-r from-[#E9292A] to-[#943835] border border-[#E9292A] font-bold text-base sm:text-lg hover:bg-[#d12621] text-white transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
