@@ -29,56 +29,56 @@ const TopSellingCarousel = () => {
       name: "The Modern Luxe Abaya",
       price: 40.0,
       rating: 5,
-      image: "/top-selling/The-Modern-Luxe-Abaya.png",
+      image: "/top-selling/1.png",
     },
     {
       id: 2,
       name: "High-Density Logo Polo",
       price: 45.0,
       rating: 5,
-      image: "/top-selling/High-Density-Logo-Polo.png",
+      image: "/top-selling/2.png",
     },
     {
       id: 3,
       name: "Desert Storm Utility Jacket",
       price: 42.0,
       rating: 5,
-      image: "/top-selling/Desert-Storm-Utility-Jacket.png",
+      image: "/top-selling/3.png",
     },
     {
       id: 4,
       name: "Oversized Comfort Knit Set",
       price: 38.0,
       rating: 5,
-      image: "/top-selling/Oversized-Comfort-Knit-Set.png",
+      image: "/top-selling/4.png",
     },
     {
       id: 5,
       name: "Geometric Motif Kaftan",
       price: 43.0,
       rating: 5,
-      image: "/top-selling/Geometric-Motif-Kaftan.png",
+      image: "/top-selling/5.png",
     },
     {
       id: 6,
       name: "The Precision-Cut Chef Coat",
       price: 46.0,
       rating: 5,
-      image: "/top-selling/The-Precision-Cut-Chef-Coat.png",
+      image: "/top-selling/6.png",
     },
     {
       id: 7,
       name: "Modern Luxe Abaya",
       price: 41.0,
       rating: 5,
-      image: "/top-selling/Modern-Luxe-Abaya.png",
+      image: "/top-selling/7.png",
     },
     {
       id: 8,
       name: "The Precision-Cut Chef Coat",
       price: 39.0,
       rating: 5,
-      image: "/top-selling/The-Precision-Cut-Chef-Coat.png",
+      image: "/top-selling/8.png",
     },
   ];
 
@@ -220,7 +220,7 @@ const TopSellingCarousel = () => {
             <motion.button
               onClick={() => toggleFavorite(product.id)}
               className={`w-10 cursor-pointer h-10 rounded-full bg-white shadow-lg flex items-center justify-center transition-all duration-300 ${
-                isFavorite ? "text-red-500" : "text-sky-500"
+                isFavorite ? "text-red-500" : "text-[var(--primary)]"
               }`}
               whileHover={{ scale: 1.15, rotate: isFavorite ? 0 : 10 }}
               whileTap={{ scale: 0.9 }}
@@ -232,7 +232,7 @@ const TopSellingCarousel = () => {
             </motion.button>
 
             <motion.button
-              className="w-10 h-10 cursor-pointer rounded-full bg-white shadow-lg flex items-center justify-center text-sky-500 hover:text-sky-600 transition-all duration-300"
+              className="w-10 h-10 cursor-pointer rounded-full bg-white shadow-lg flex items-center justify-center text-[var(--primary)] hover:text-[var(--primary)]/70 transition-all duration-300"
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Quick view"
@@ -241,7 +241,7 @@ const TopSellingCarousel = () => {
             </motion.button>
 
             <motion.button
-              className="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-sky-500 hover:text-sky-600 transition-all duration-300 cursor-pointer"
+              className="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-[var(--primary)] hover:text-[var(--primary)]/60 transition-all duration-300 cursor-pointer"
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Add to cart"
@@ -277,7 +277,7 @@ const TopSellingCarousel = () => {
             </div>
 
             {/* Price */}
-            <span className="text-sky-500 text-lg font-bold">
+            <span className="text-[var(--primary)] text-lg font-bold">
               AED {product.price.toFixed(2)}
             </span>
           </div>
@@ -299,7 +299,7 @@ const TopSellingCarousel = () => {
             variants={headerVariants}
           >
             <div className="space-y-2">
-              <h2 className="text-4xl sm:text-4xl font-bold text-sky-500 text-shadow-md tracking-wide">
+              <h2 className="text-4xl sm:text-4xl font-bold text-[var(--primary)] text-shadow-md tracking-wide">
                 Top Selling
               </h2>
               <p className="text-lg sm:text-xl text-gray-700">
@@ -313,7 +313,7 @@ const TopSellingCarousel = () => {
               <motion.button
                 onClick={prevSlide}
                 disabled={currentSlide === 0}
-                className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-sky-500 text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600 cursor-pointer"
+                className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-[var(--primary)] text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600 cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Previous slide"
@@ -324,7 +324,7 @@ const TopSellingCarousel = () => {
               <motion.button
                 onClick={nextSlide}
                 disabled={currentSlide === totalSlides - 1}
-                className="w-12 h-12 cursor-pointer rounded-lg bg-sky-500 hover:bg-sky-600 text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-sky-500"
+                className="w-12 h-12 cursor-pointer rounded-lg bg-[var(--primary)] hover:bg-[var(--primary)]/70 text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[var(--primary)]/80"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Next slide"
@@ -372,8 +372,8 @@ const TopSellingCarousel = () => {
                 onClick={() => goToSlide(index)}
                 className={`rounded-full transition-all duration-300 ${
                   currentSlide === index
-                    ? "w-14 h-5 bg-sky-500"
-                    : "w-5 h-5 bg-sky-200 hover:bg-sky-300"
+                    ? "w-14 h-5 bg-[var(--primary)]"
+                    : "w-5 h-5 bg-sky-200 hover:bg-[var(--primary)]/40"
                 }`}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}

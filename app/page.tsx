@@ -15,6 +15,7 @@ import Subscribe from "@/components/Subscribe";
 import DownloadOurApp from "@/components/DownloadOurApp";
 import Stats from "@/components/Stats";
 import CategoriesSection from "@/components/CategoriesSection";
+import ExclusiveDeals from "@/components/ExclusiveDeals";
 
 export default function Home() {
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function Home() {
             <CategoriesSection />
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
-            <OurOffer />
+            {/* <OurOffer /> */}
           </div>
           <div data-aos="fade-up" data-aos-delay="200">
             <OurProducts />
@@ -46,7 +47,7 @@ export default function Home() {
             <TopSelling />
           </div>
           <div data-aos="fade-up" data-aos-delay="200">
-            <Recomended />
+            <ExclusiveDeals />
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
             <FlashSale />
@@ -55,10 +56,10 @@ export default function Home() {
             <ClientTestimonials />
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
-            <TwoCard />
+            {/* <TwoCard /> */}
           </div>
           <div data-aos="fade-up" data-aos-delay="200">
-            <Subscribe />
+            {/* <Subscribe /> */}
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
             <DownloadOurApp />
