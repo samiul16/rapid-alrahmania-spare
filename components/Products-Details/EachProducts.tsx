@@ -51,35 +51,35 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
   // Default product data for demonstration
   const defaultProduct: ProductData = {
     id: "1",
-    name: "Alburaq Men's Premium Slim Fit Formal Shirt",
-    price: 609.2,
-    originalPrice: 870.29,
+    name: "Premium Air Brake System - Heavy Duty",
+    price: 450.0,
+    originalPrice: 642.86,
     discount: 30,
-    availability: 20,
+    availability: 15,
     images: [
-      "/each-products/main.png",
-      "/each-products/1.jpg",
-      "/each-products/2.png",
-      "/each-products/3.png",
+      "/Exclusive-Deals/1.png",
+      "/Exclusive-Deals/2.png",
+      "/Exclusive-Deals/3.png",
+      "/Exclusive-Deals/4.png",
     ],
-    sizes: ["2XL", "S", "M", "L", "XL"],
-    colors: ["Navy Blue", "Light Blue", "White", "Black"],
-    code: "4107210722",
-    styleCode: "MLSDJE717/23 (6735)",
+    sizes: ["Standard", "Heavy Duty", "Commercial"],
+    colors: ["Black", "Silver", "Chrome"],
+    code: "AIR-BRK-001",
+    styleCode: "ABSHD2024/HD (7845)",
     features: [
-      "Cotton Fabrics",
-      "Slim Fit",
-      "Available in sizes S to XXL",
-      "Navy Blue Color",
-      "Suitable for all occasions",
+      "High-Grade Steel & Aluminum Construction",
+      "Heavy Duty Performance",
+      "Compatible with Most Truck Models",
+      "2 Year Warranty",
+      "Professional Installation Recommended",
     ],
     description:
-      "Command attention with the Alburaq Men's Slim Fit Formal Shirt, a perfect blend of sophistication and modern tailoring. Designed for the contemporary gentleman, this shirt exudes confidence and class in every detail. The navy blue hue adds a timeless touch of elegance, making it an ideal choice for business meetings, office wear, or formal occasions.",
+      "Experience superior stopping power with our Premium Air Brake System, engineered for heavy-duty commercial vehicles. This advanced braking system combines cutting-edge technology with robust construction to deliver exceptional performance and reliability. Designed for trucks, buses, and commercial vehicles, this air brake system ensures maximum safety and control in all driving conditions.",
     additionalInfo:
-      "Crafted from premium cotton-rich fabric, it offers superior comfort, breathability, and durability throughout the day. The slim fit silhouette ensures a sharp, structured look that enhances your physique while allowing ease of movement.",
-    reviews: 0,
-    sku: "N/A",
-    categories: ["Men", "Shirt", "Formal"],
+      "Manufactured from premium-grade steel and aluminum alloy, this brake system offers outstanding durability and corrosion resistance. The precision-engineered components provide consistent braking performance while minimizing maintenance requirements. Each system undergoes rigorous quality testing to meet international safety standards.",
+    reviews: 12,
+    sku: "ABS-HD-2024",
+    categories: ["Brake System", "Heavy Duty", "Commercial"],
   };
 
   const productData = product || defaultProduct;
@@ -163,7 +163,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
                   onClick={() => setSelectedImage(index)}
                   className={`relative aspect-square bg-gray-100 rounded-lg overflow-hidden border-2 transition-colors ${
                     selectedImage === index
-                      ? "border-cyan-400"
+                      ? "border-[#E9292A]"
                       : "border-transparent hover:border-gray-300"
                   }`}
                   whileHover={{ scale: 1.05 }}
@@ -198,7 +198,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 <motion.div
-                  className="bg-sky-400 text-white px-3 py-1 rounded-full text-base font-semibold shadow border-2 border-sky-300"
+                  className="bg-[#E9292A] text-white px-3 py-1 rounded-full text-base font-semibold shadow border-2 border-[#E9292A]"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -227,47 +227,39 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
               </p>
             </div>
 
-            {/* Size Chart Table */}
+            {/* Technical Specifications Table */}
             <div className="bg-gray-100 p-4 rounded-lg shadow-md">
               <h3 className="font-semibold mb-3 text-center">
-                Men&apos;s Slim Fit Shirt
+                Technical Specifications
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b">
-                      <th className="text-left py-2">Size</th>
-                      <th className="text-left py-2">S</th>
-                      <th className="text-left py-2">M</th>
-                      <th className="text-left py-2">L</th>
-                      <th className="text-left py-2">XL</th>
-                      <th className="text-left py-2">XXL</th>
+                      <th className="text-left py-2">Specification</th>
+                      <th className="text-left py-2">Standard</th>
+                      <th className="text-left py-2">Heavy Duty</th>
+                      <th className="text-left py-2">Commercial</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b">
-                      <td className="py-2">Collar</td>
-                      <td className="py-2">15</td>
-                      <td className="py-2">15.5</td>
-                      <td className="py-2">16</td>
-                      <td className="py-2">16.5</td>
-                      <td className="py-2">17</td>
+                      <td className="py-2">Max Pressure</td>
+                      <td className="py-2">120 PSI</td>
+                      <td className="py-2">150 PSI</td>
+                      <td className="py-2">180 PSI</td>
                     </tr>
                     <tr className="border-b">
-                      <td className="py-2">Chest</td>
-                      <td className="py-2">41</td>
-                      <td className="py-2">42</td>
-                      <td className="py-2">43.5</td>
-                      <td className="py-2">44.5</td>
-                      <td className="py-2">46</td>
+                      <td className="py-2">Weight Capacity</td>
+                      <td className="py-2">15 Tons</td>
+                      <td className="py-2">25 Tons</td>
+                      <td className="py-2">40 Tons</td>
                     </tr>
                     <tr>
-                      <td className="py-2">Length</td>
-                      <td className="py-2">29.5</td>
-                      <td className="py-2">30.0</td>
-                      <td className="py-2">31</td>
-                      <td className="py-2">32</td>
-                      <td className="py-2">32.5</td>
+                      <td className="py-2">Operating Temp</td>
+                      <td className="py-2">-20°C to 80°C</td>
+                      <td className="py-2">-30°C to 100°C</td>
+                      <td className="py-2">-40°C to 120°C</td>
                     </tr>
                   </tbody>
                 </table>
@@ -287,7 +279,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
               <ul className="space-y-1 text-gray-700">
                 {productData.features.map((feature, index) => (
                   <li key={index} className="flex items-center">
-                    <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>
+                    <span className="w-2 h-2 bg-[#E9292A] rounded-full mr-3"></span>
                     {feature}
                   </li>
                 ))}
@@ -297,20 +289,24 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
             {/* Disclaimer */}
             <div className="text-sm text-gray-600">
               <p>
-                Product color may slightly vary due to photographic lighting.
+                Product appearance may slightly vary due to photographic
+                lighting.
               </p>
               <p className="text-red-600 font-semibold">
-                ** No Exchange, No Return
+                ** Professional Installation Recommended
+              </p>
+              <p className="text-green-600 font-semibold">
+                ** 2 Year Manufacturer Warranty
               </p>
             </div>
 
-            {/* Size Selection */}
+            {/* Type Selection */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
             >
-              <h3 className="font-semibold mb-3">Size</h3>
+              <h3 className="font-semibold mb-3">Type</h3>
               <div className="flex gap-2 flex-wrap">
                 {productData.sizes.map((size, index) => (
                   <motion.button
@@ -318,8 +314,8 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
                     onClick={() => setSelectedSize(size)}
                     className={`px-4 py-2 border rounded-lg transition-colors cursor-pointer ${
                       selectedSize === size
-                        ? "border-sky-400 bg-sky-100 text-cyan-600"
-                        : "border-sky-400 hover:border-sky-500"
+                        ? "border-[#E9292A] bg-red-50 text-[#E9292A]"
+                        : "border-[#E9292A] hover:border-red-600"
                     }`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -341,7 +337,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
               transition={{ duration: 0.6, delay: 0.9 }}
             >
               <motion.div
-                className="flex items-center border border-sky-300 rounded-lg"
+                className="flex items-center border border-[#E9292A] rounded-lg"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
@@ -353,7 +349,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
                   <Minus className="w-4 h-4" />
                 </motion.button>
                 <motion.span
-                  className="px-4 py-2 border-x border-sky-300 min-w-[60px] text-center"
+                  className="px-4 py-2 border-x border-[#E9292A] min-w-[60px] text-center"
                   key={quantity}
                   initial={{ scale: 1.2 }}
                   animate={{ scale: 1 }}
@@ -372,7 +368,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
 
               <motion.button
                 onClick={handleAddToCart}
-                className="flex-1 bg-sky-400 hover:bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                className="flex-1 bg-[#E9292A] hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.2 }}
@@ -382,18 +378,18 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
               </motion.button>
 
               <motion.button
-                className="p-3 border border-sky-400 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"
+                className="p-3 border border-[#E9292A] rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.2 }}
               >
-                <Heart className="w-5 h-5 text-sky-500" />
+                <Heart className="w-5 h-5 text-[#E9292A]" />
               </motion.button>
             </motion.div>
 
-            {/* Size Chart Link */}
-            <button className="text-sky-500 hover:text-sky-600 font-semibold">
-              See Size Chart
+            {/* Installation Guide Link */}
+            <button className="text-[#E9292A] hover:text-red-600 font-semibold">
+              View Installation Guide
             </button>
 
             {/* Product Meta */}
@@ -412,10 +408,10 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
             <div className="flex items-center gap-4">
               <span className="font-semibold">Share:</span>
               <div className="flex gap-2">
-                <button className="p-2 text-sky-400 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer">
+                <button className="p-2 text-[#E9292A] hover:bg-red-50 rounded-lg transition-colors cursor-pointer">
                   <Facebook className="w-5 h-5" />
                 </button>
-                <button className="p-2 text-cyan-500 hover:bg-cyan-50 rounded-lg transition-colors cursor-pointer">
+                <button className="p-2 text-[#E9292A] hover:bg-red-50 rounded-lg transition-colors cursor-pointer">
                   <Twitter className="w-5 h-5" />
                 </button>
               </div>
@@ -430,7 +426,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0 }}
         >
-          <div className="border-b border-sky-200">
+          <div className="border-b border-red-200">
             <nav className="flex space-x-8 justify-center">
               {[
                 { id: "description", label: "Description" },
@@ -442,8 +438,8 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors cursor-pointer ${
                     activeTab === tab.id
-                      ? "border-sky-400 text-sky-400 font-semibold"
-                      : "border-transparent text-gray-500 hover:text-gray-700 hover:border-sky-300"
+                      ? "border-[#E9292A] text-[#E9292A] font-semibold"
+                      : "border-transparent text-gray-500 hover:text-gray-700 hover:border-red-300"
                   }`}
                 >
                   {tab.label}
@@ -470,10 +466,11 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
                     {productData.additionalInfo}
                   </p>
                   <p className="text-gray-700 leading-relaxed">
-                    Pair it effortlessly with formal trousers and leather shoes
-                    for a refined professional look or dress it down with chinos
-                    for smart-casual charm. With INFINITY, experience comfort,
-                    confidence, and style—redefined for the modern man.
+                    Install with confidence knowing this brake system is backed
+                    by comprehensive technical support and a 2-year warranty.
+                    Compatible with most commercial vehicle makes and models,
+                    this system delivers the reliability and performance your
+                    fleet demands.
                   </p>
                 </motion.div>
               )}
@@ -491,25 +488,25 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <p>
-                        <strong>Material:</strong> Premium Cotton-Rich Fabric
+                        <strong>Material:</strong> High-Grade Steel & Aluminum
                       </p>
                       <p>
-                        <strong>Fit:</strong> Slim Fit
+                        <strong>Type:</strong> Air Brake System
                       </p>
                       <p>
-                        <strong>Care Instructions:</strong> Machine wash cold,
-                        tumble dry low
+                        <strong>Installation:</strong> Professional installation
+                        recommended
                       </p>
                     </div>
                     <div>
                       <p>
-                        <strong>Origin:</strong> Made in UAE
+                        <strong>Origin:</strong> Made in Germany
                       </p>
                       <p>
-                        <strong>Brand:</strong> Alburaq
+                        <strong>Brand:</strong> Alrahmania Auto Parts
                       </p>
                       <p>
-                        <strong>Warranty:</strong> 30 days manufacturing defect
+                        <strong>Warranty:</strong> 2 years manufacturer warranty
                       </p>
                     </div>
                   </div>
