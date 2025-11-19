@@ -4,8 +4,10 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Shield, Clock, Award, Users, Wrench, CheckCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
 
-const WhyChooseAlRehmaniah = () => {
+const WhyChooseAlRahmaniah = () => {
+  const router = useRouter();
   const features = [
     {
       icon: Shield,
@@ -31,22 +33,22 @@ const WhyChooseAlRehmaniah = () => {
       description:
         "Preferred supplier for leading garages, mechanics, and automotive professionals across UAE.",
     },
-    {
-      icon: Wrench,
-      title: "Installation Support",
-      description:
-        "Technical assistance and installation guidance to ensure perfect fitment every time.",
-    },
-    {
-      icon: CheckCircle,
-      title: "Warranty Assurance",
-      description:
-        "Comprehensive warranty coverage on all parts with hassle-free replacement guarantee.",
-    },
+    // {
+    //   icon: Wrench,
+    //   title: "Installation Support",
+    //   description:
+    //     "Technical assistance and installation guidance to ensure perfect fitment every time.",
+    // },
+    // {
+    //   icon: CheckCircle,
+    //   title: "Warranty Assurance",
+    //   description:
+    //     "Comprehensive warranty coverage on all parts with hassle-free replacement guarantee.",
+    // },
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-16 bg-gray-50">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-24">
         {/* Single Card Container */}
         <motion.div
@@ -56,7 +58,7 @@ const WhyChooseAlRehmaniah = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="flex flex-col lg:flex-row min-h-[600px]">
+          <div className="flex flex-col lg:flex-row min-h-[400px]">
             {/* Left Side - Image (30% width, full height) */}
             <motion.div
               className="relative lg:w-[45%] h-64 lg:h-auto"
@@ -67,7 +69,7 @@ const WhyChooseAlRehmaniah = () => {
             >
               <Image
                 src="/landing/spare-parts-15.jpg"
-                alt="Al Rehmaniah Auto Accessories - Premium car parts and professional service"
+                alt="Al Rahmaniah Auto Accessories - Premium car parts and professional service"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 45vw"
@@ -106,7 +108,7 @@ const WhyChooseAlRehmaniah = () => {
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
                   Why Choose{" "}
-                  <span className="text-[#E9292A]">Al Rehmaniah</span>?
+                  <span className="text-[#E9292A]">Al Rahmaniah</span>
                 </motion.h2>
 
                 <motion.p
@@ -177,12 +179,13 @@ const WhyChooseAlRehmaniah = () => {
                     transition: { duration: 0.2 },
                   }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => router.push("/products")}
                 >
                   Shop Our Parts Now
                 </motion.button>
 
                 <p className="text-sm text-gray-500 mt-3">
-                  Join thousands of satisfied customers who trust Al Rehmaniah
+                  Join thousands of satisfied customers who trust Al Rahmaniah
                   for their automotive needs.
                 </p>
               </motion.div>
@@ -194,4 +197,4 @@ const WhyChooseAlRehmaniah = () => {
   );
 };
 
-export default WhyChooseAlRehmaniah;
+export default WhyChooseAlRahmaniah;
