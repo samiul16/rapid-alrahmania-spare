@@ -43,9 +43,9 @@ export default function Cart({
     () => [
       {
         id: "1",
-        name: "Premium Red Blazer",
+        name: "Brake Pads Set",
         description:
-          "Elegant formal blazer with tailored fit and premium fabric.",
+          "High-performance ceramic brake pads for superior stopping power.",
         price: 450,
         quantity: 1,
         image: "/cart/1.jpg",
@@ -53,8 +53,9 @@ export default function Cart({
       },
       {
         id: "2",
-        name: "Classic Brown Jacket",
-        description: "Stylish casual jacket perfect for everyday wear.",
+        name: "Oil Filter",
+        description:
+          "Premium oil filter for engine protection and performance.",
         price: 320,
         quantity: 1,
         image: "/cart/2.jpg",
@@ -62,8 +63,8 @@ export default function Cart({
       },
       {
         id: "3",
-        name: "Denim Shirt",
-        description: "Comfortable denim shirt with modern cut and design.",
+        name: "Air Filter",
+        description: "High-flow air filter for improved engine efficiency.",
         price: 180,
         quantity: 1,
         image: "/cart/3.jpg",
@@ -71,8 +72,8 @@ export default function Cart({
       },
       {
         id: "4",
-        name: "Black Leather Jacket",
-        description: "Premium leather jacket with contemporary styling.",
+        name: "Headlight Assembly",
+        description: "Complete LED headlight assembly with modern design.",
         price: 650,
         quantity: 1,
         image: "/cart/4.jpg",
@@ -158,7 +159,7 @@ export default function Cart({
           <div className="lg:col-span-2">
             <div className="bg-white rounded-lg shadow overflow-hidden">
               {/* Header */}
-              <div className="grid grid-cols-12 gap-4 p-4 bg-sky-100 border-b border-b-sky-200 text-sm font-medium text-gray-700">
+              <div className="grid grid-cols-12 gap-4 p-4 bg-red-100 border-b border-b-red-200 text-sm font-medium text-gray-700">
                 <div className="col-span-5">Items</div>
                 <div className="col-span-2 text-center">Price</div>
                 <div className="col-span-2 text-center">Quantity</div>
@@ -255,7 +256,7 @@ export default function Cart({
               <div className="p-4 bg-gray-50 flex flex-col sm:flex-row justify-between gap-4">
                 <button
                   onClick={handleClearCart}
-                  className="px-6 py-2 border border-sky-400 text-sky-400 rounded-full hover:bg-cyan-50 transition-colors text-sm font-semibold cursor-pointer shadow"
+                  className="px-6 py-2 border border-[#E9292A] text-[#E9292A] rounded-full hover:bg-red-50 transition-colors text-sm font-semibold cursor-pointer shadow"
                 >
                   Clear shopping Cart
                 </button>
@@ -264,7 +265,7 @@ export default function Cart({
                     onContinueShopping?.();
                     router.push("/products");
                   }}
-                  className="px-6 py-2 bg-sky-400 text-white rounded-full hover:bg-sky-500 transition-colors text-sm font-medium cursor-pointer shadow"
+                  className="px-6 py-2 bg-[#E9292A] text-white rounded-full hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer shadow"
                 >
                   Continue shopping
                 </button>
@@ -274,7 +275,7 @@ export default function Cart({
 
           {/* Order Summary Section */}
           <div className="lg:col-span-1">
-            <div className="bg-sky-50 rounded-lg shadow p-6 sticky top-8">
+            <div className="bg-red-50 rounded-lg shadow p-6 sticky top-8">
               <h2 className="text-lg font-semibold text-gray-900 mb-6">
                 Orders Summary
               </h2>
@@ -311,11 +312,11 @@ export default function Cart({
                       placeholder="Coupon Code"
                       value={couponCode}
                       onChange={(e) => setCouponCode(e.target.value)}
-                      className="flex-1 px-3 py-2 border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-transparent rounded-full bg-sky-50/70"
+                      className="flex-1 px-3 py-2 border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent rounded-full bg-red-50/70"
                     />
                     <button
                       onClick={handleApplyCoupon}
-                      className="px-4 py-2 bg-sky-400 text-white rounded-full hover:bg-sky-500 transition-colors text-sm font-medium cursor-pointer shadow"
+                      className="px-4 py-2 bg-[#E9292A] text-white rounded-full hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer shadow"
                     >
                       Apply
                     </button>
@@ -328,7 +329,7 @@ export default function Cart({
                     onProceedToCheckout?.();
                     router.push("/checkout");
                   }}
-                  className="w-full mt-6 px-6 py-3 bg-sky-400 text-white rounded-full hover:bg-sky-500 transition-colors font-medium cursor-pointer shadow"
+                  className="w-full mt-6 px-6 py-3 bg-[#E9292A] text-white rounded-full hover:bg-red-700 transition-colors font-medium cursor-pointer shadow"
                 >
                   PROCESS TO CHECKOUT
                 </button>

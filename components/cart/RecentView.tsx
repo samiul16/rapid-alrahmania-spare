@@ -21,56 +21,56 @@ const TopSellingCarousel = () => {
   const products = [
     {
       id: 1,
-      name: "Military Style Jacket",
+      name: "Brake Pads Set",
       price: 280.0,
       rating: 5,
       image: "/recent/1.jpg",
     },
     {
       id: 2,
-      name: "Classic Brown Blazer",
+      name: "Oil Filter Premium",
       price: 420.0,
       rating: 5,
       image: "/recent/2.jpg",
     },
     {
       id: 3,
-      name: "Denim Jacket",
+      name: "Air Filter",
       price: 195.0,
       rating: 5,
       image: "/recent/3.jpg",
     },
     {
       id: 4,
-      name: "Premium Puffer Jacket",
+      name: "Headlight Assembly",
       price: 350.0,
       rating: 5,
       image: "/recent/4.jpg",
     },
     {
       id: 5,
-      name: "Casual Windbreaker",
+      name: "Spark Plugs Set",
       price: 240.0,
       rating: 5,
       image: "/recent/1.jpg",
     },
     {
       id: 6,
-      name: "Formal Suit Jacket",
+      name: "Battery 12V",
       price: 480.0,
       rating: 5,
       image: "/recent/2.jpg",
     },
     {
       id: 7,
-      name: "Vintage Denim Shirt",
+      name: "Wiper Blades",
       price: 160.0,
       rating: 5,
       image: "/recent/3.jpg",
     },
     {
       id: 8,
-      name: "Winter Coat",
+      name: "Coolant Radiator",
       price: 520.0,
       rating: 5,
       image: "/recent/4.jpg",
@@ -176,9 +176,9 @@ const TopSellingCarousel = () => {
     const isFavorite = favorites.has(product.id);
 
     return (
-      <div className="group relative bg-sky-50 rounded-xl border border-zinc-300 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+      <div className="group relative bg-red-50 rounded-xl border border-zinc-300 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
         {/* Image Container */}
-        <div className="relative h-52 bg-gradient-to-br from-sky-100 to-sky-200 overflow-hidden">
+        <div className="relative h-52 bg-gradient-to-br from-red-100 to-red-200 overflow-hidden">
           <img
             src={product.image}
             alt={product.name}
@@ -190,7 +190,7 @@ const TopSellingCarousel = () => {
             <button
               onClick={() => toggleFavorite(product.id)}
               className={`w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 ${
-                isFavorite ? "text-red-500" : "text-sky-500"
+                isFavorite ? "text-red-500" : "text-[#E9292A]"
               }`}
               aria-label="Add to favorites"
             >
@@ -200,14 +200,14 @@ const TopSellingCarousel = () => {
             </button>
 
             <button
-              className="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-sky-500 hover:text-sky-600 transition-all duration-300 hover:scale-110"
+              className="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-[#E9292A] hover:text-red-700 transition-all duration-300 hover:scale-110"
               aria-label="Quick view"
             >
               <Eye className="w-5 h-5" />
             </button>
 
             <button
-              className="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-sky-500 hover:text-sky-600 transition-all duration-300 hover:scale-110"
+              className="w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-[#E9292A] hover:text-red-700 transition-all duration-300 hover:scale-110"
               aria-label="Add to cart"
             >
               <ShoppingCart className="w-5 h-5" />
