@@ -43,58 +43,49 @@ const FlashSale = () => {
   const products: Product[] = [
     {
       id: "1",
-      name: "The Vestry Waistcoat",
+      name: "Premium Brake Disc",
       image: "/top-selling/1.png",
-      originalPrice: 960,
-      salePrice: 960,
-      discount: 40,
-      rating: 4,
+      originalPrice: 320,
+      salePrice: 240,
+      discount: 25,
+      rating: 5,
     },
     {
       id: "2",
-      name: "Silk Drape Kaftan",
-      image: "/top-selling/3.png",
-      originalPrice: 960,
-      salePrice: 960,
-      discount: 30,
+      name: "LED Headlight Kit",
+      image: "/products/LED Fog Light Kit.png",
+      originalPrice: 80,
+      salePrice: 60,
+      discount: 25,
       rating: 4,
     },
     {
       id: "3",
-      name: "The Pilot Bomber",
-      image: "/top-selling/5.png",
-      originalPrice: 960,
-      salePrice: 960,
-      discount: 40,
-      rating: 4,
+      name: "Engine Oil Filter",
+      image: "/top-selling/3.png",
+      originalPrice: 450,
+      salePrice: 315,
+      discount: 30,
+      rating: 5,
     },
     {
       id: "4",
-      name: "Core Knit Jogger",
-      image: "/top-selling/7.png",
-      originalPrice: 960,
-      salePrice: 960,
-      discount: 40,
+      name: "Radiator Assembly",
+      image: "/top-selling/5.png",
+      originalPrice: 280,
+      salePrice: 196,
+      discount: 30,
       rating: 4,
     },
     {
       id: "5",
-      name: "3D Puff Logo Cap",
-      image: "/top-selling/8.png",
-      originalPrice: 800,
-      salePrice: 480,
-      discount: 40,
-      rating: 5,
+      name: "Fuel Pump Module",
+      image: "/top-selling/6.png",
+      originalPrice: 220,
+      salePrice: 165,
+      discount: 25,
+      rating: 4,
     },
-    // {
-    //   id: "6",
-    //   name: "Sports Shoes",
-    //   image: "/flash-sale/2.jpg",
-    //   originalPrice: 1200,
-    //   salePrice: 840,
-    //   discount: 30,
-    //   rating: 4,
-    // },
   ];
 
   // Update items per view based on screen size
@@ -199,7 +190,7 @@ const FlashSale = () => {
       <span
         key={index}
         className={`text-sm ${
-          index < rating ? "text-[var(--primary)]" : "text-gray-300"
+          index < rating ? "text-amber-400" : "text-gray-300"
         }`}
       >
         ★
@@ -214,10 +205,27 @@ const FlashSale = () => {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
           {/* Left Side - Title and Countdown */}
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] mb-6">Flash Sale</h2>
+            {/* Title with Red Background */}
+            <motion.div
+              className="bg-[#E9292A] rounded-2xl px-8 py-4 mb-6 inline-block shadow-lg"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <h2 className="text-4xl sm:text-5xl font-bold text-white">
+                Flash Sale
+              </h2>
+            </motion.div>
 
             {/* Countdown Timer */}
-            <div className="flex items-end space-x-4">
+            <motion.div
+              className="flex items-end space-x-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <div className="text-center">
                 <div className="text-sm text-gray-600 mb-1">Days</div>
                 <div className="text-3xl font-bold text-gray-900">
@@ -245,7 +253,7 @@ const FlashSale = () => {
                   {timeLeft.seconds.toString().padStart(2, "0")}
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Right Side - Navigation Arrows */}
@@ -253,7 +261,7 @@ const FlashSale = () => {
             <motion.button
               onClick={prevSlide}
               disabled={currentSlide === 0}
-              className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-[var(--primary)] text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600 cursor-pointer"
+              className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-[#E9292A] text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -262,7 +270,7 @@ const FlashSale = () => {
             <motion.button
               onClick={nextSlide}
               disabled={currentSlide === totalSlides - 1}
-              className="w-12 h-12 rounded-lg bg-[var(--primary)] hover:bg-[var(--primary)]/70 text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[var(--primary)] cursor-pointer"
+              className="w-12 h-12 rounded-lg bg-[#E9292A] hover:bg-[#d12621] text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#E9292A] cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -316,8 +324,8 @@ const FlashSale = () => {
               onClick={() => goToSlide(index)}
               className={`rounded-full cursor-pointer transition-all duration-300 ${
                 currentSlide === index
-                  ? "w-14 h-5 bg-[var(--primary)]"
-                  : "w-5 h-5 bg-red-200 hover:bg-[var(--primary)]/40"
+                  ? "w-14 h-5 bg-[#E9292A]"
+                  : "w-5 h-5 bg-red-200 hover:bg-[#E9292A]/40"
               }`}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
@@ -341,7 +349,7 @@ const ProductCard: React.FC<{
       whileHover={{
         y: -8,
         scale: 1.03,
-        boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)",
+        boxShadow: "0 20px 40px rgba(233, 41, 42, 0.15)",
       }}
       transition={{ duration: 0.3 }}
     >
@@ -349,7 +357,7 @@ const ProductCard: React.FC<{
       <div className="relative mb-4 bg-gray-100 rounded-xl overflow-hidden aspect-square">
         {/* Discount Badge */}
         <div className="absolute top-3 left-3 z-10">
-          <span className="bg-[var(--primary)]/60 text-white px-2 py-1 rounded text-sm font-semibold">
+          <span className="bg-[#E9292A] text-white px-2 py-1 rounded text-sm font-semibold">
             -{product.discount}%
           </span>
         </div>
@@ -361,21 +369,21 @@ const ProductCard: React.FC<{
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Heart className="w-4 h-4 text-gray-600" />
+            <Heart className="w-4 h-4 text-[#E9292A]" />
           </motion.button>
           <motion.button
             className="p-2 bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors cursor-pointer"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Eye className="w-4 h-4 text-[var(--primary)]" />
+            <Eye className="w-4 h-4 text-[#E9292A]" />
           </motion.button>
           <motion.button
             className="p-2 bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors cursor-pointer"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
           >
-            <ShoppingCart className="w-4 h-4 text-[var(--primary)]" />
+            <ShoppingCart className="w-4 h-4 text-[#E9292A]" />
           </motion.button>
         </div>
 
@@ -403,7 +411,7 @@ const ProductCard: React.FC<{
             <span className="text-sm text-gray-500 line-through">
               AED{product.originalPrice}
             </span>
-            <span className="text-xl font-bold text-[var(--primary)]">
+            <span className="text-xl font-bold text-[#E9292A]">
               AED{product.salePrice}
             </span>
           </div>

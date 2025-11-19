@@ -58,7 +58,7 @@ const CategoriesSection = () => {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-28">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-24">
         {/* Section Header */}
         <motion.div
           className="text-center mb-12"

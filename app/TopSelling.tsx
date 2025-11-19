@@ -287,7 +287,7 @@ const TopSellingCarousel = () => {
   };
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-gray-50">
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-20 py-12">
         <div className="space-y-10">
           {/* Header */}
