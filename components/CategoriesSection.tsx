@@ -70,6 +70,10 @@ const CategoriesSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#E9292A] mb-4">
             Categories
           </h2>
+          <p className="text-gray-600 text-lg max-w-5xl mx-auto">
+            Find every car part you need in one place. Browse by category and
+            discover quality products for your vehicle.
+          </p>
         </motion.div>
 
         {/* Horizontal Rectangle Container */}

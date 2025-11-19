@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Alrahamania",
-  description: "Alrahamania",
+  title: "Al Rahmaniah",
+  description: "Al Rahmaniah",
 };
 
 export default function RootLayout({
@@ -97,7 +97,7 @@ export default function RootLayout({
         {/* Global WhatsApp Button - Bottom Right */}
         <div className="fixed bottom-6 right-6 z-50">
           <a
-            href="https://wa.me/+971543247559"
+            href="https://wa.me/+971558674927"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex items-center justify-end transition-all duration-300"

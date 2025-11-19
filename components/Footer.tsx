@@ -17,12 +17,12 @@ const Footer = () => {
                 alt="Alburaq"
                 width={110}
                 height={30}
-                className="mb-4 rounded-lg"
+                className="rounded-lg -mt-10"
               />
             </div>
             <p className="text-xl text-gray-100 mb-6">
-              Alburaq is your go-to destination for quality products at
-              unbeatable prices.
+              Al Rahmaniah Auto Accessories is your trusted destination for
+              premium car parts and accessories at unbeatable prices.
             </p>
 
             {/* Social Media Icons */}
@@ -45,7 +45,7 @@ const Footer = () => {
 
               {/* Facebook */}
               <Link
-                href="https://www.facebook.com/Alburaqemb/"
+                href="https://www.facebook.com/profile.php?id=61566498273813"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] bg-[var(--primary)] rounded-full flex items-center justify-center hover:bg-[var(--primary)] transition-colors aspect-square"
@@ -77,7 +77,7 @@ const Footer = () => {
 
               {/* Instagram */}
               <Link
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/alrahmaniahautouae/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-shrink-0 w-8 h-8 min-w-[2rem] min-h-[2rem] border-2 border-[var(--primary)] rounded-full flex items-center justify-center hover:bg-[var(--primary)] hover:bg-opacity-20 transition-all aspect-square"
@@ -233,7 +233,7 @@ const Footer = () => {
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
                 <p className="text-xl text-gray-100">
-                  Al Rashidiya 1 - Ajman - United Arab Emirates
+                  Address ind.Area 1 P.O. Box: 79308
                 </p>
               </div>
 
@@ -245,7 +245,7 @@ const Footer = () => {
                 >
                   <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                 </svg>
-                <p className="text-xl text-gray-100">+971 54 324 7559</p>
+                <p className="text-xl text-gray-100">+971 55 867 4927</p>
               </div>
 
               <div className="flex items-center space-x-2">
@@ -256,7 +256,9 @@ const Footer = () => {
                 >
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
-                <p className="text-xl text-gray-100">marium.marufa@gmail.com</p>
+                <p className="text-lg text-gray-100">
+                  info@alrahmaniahautouae.com
+                </p>
               </div>
             </div>
           </div>
@@ -267,7 +269,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-4 mb-4 md:mb-0">
               <p className="text-lg text-gray-100">
-                © 2025 Alburaq. All Rights Reserved.
+                © 2025 Al Rahmaniah. All Rights Reserved.
               </p>
             </div>
 

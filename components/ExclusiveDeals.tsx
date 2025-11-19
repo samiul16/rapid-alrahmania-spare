@@ -32,7 +32,7 @@ const ExclusiveDeals = () => {
     },
     {
       id: 3,
-      title: "Air Brake",
+      title: "Turbo Charger",
       image: "/Exclusive-Deals/3.png",
       rating: 5,
       orderText: "Order Now",
@@ -44,7 +44,7 @@ const ExclusiveDeals = () => {
     },
     {
       id: 4,
-      title: "Air Brake",
+      title: "Alloy Wheel Rim",
       image: "/Exclusive-Deals/4.png",
       rating: 5,
       orderText: "Order Now",
@@ -75,11 +75,11 @@ const ExclusiveDeals = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-5xl sm:text-5xl font-bold text-[#E9292A] mb-4">
-            Exclusive Deals on Every Part
+            Exclusive Deals Across All Parts
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Explore our wide range of genuine auto parts and enjoy exclusive
-            discounts on your purchase
+            Get premium car parts at special prices. Only for our valued
+            customers
           </p>
         </div>
 

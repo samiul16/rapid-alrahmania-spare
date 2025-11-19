@@ -89,35 +89,35 @@ const ClientTestimonials = () => {
   const testimonialsData: TestimonialData[] = [
     {
       id: 1,
-      name: "Yousuf Noor",
+      name: "Mohammed Fahad",
       title: "",
       image: "/clientt/1.jpeg",
       testimonial:
-        "We have been sourcing our entire line of outerwear from Alburaq for three seasons, and the quality is consistently exceptional. Our customers demand durable, weather-tested garments, and Alburaq delivers every time. The stitching is flawless, the materials are top-grade, and their attention to detail means fewer returns for us. They truly define manufacturing excellence.",
+        "Excellent service and genuine spare parts! I ordered brake pads and an air filter—delivery was fast and the quality is outstanding. Highly recommended!",
     },
     {
       id: 2,
-      name: "Stella Smith, New York",
+      name: "Abul Rahman",
       title: "",
       image: "/clientt/2.jpeg",
       testimonial:
-        "Alburaq isn't just a supplier; they are a true manufacturing partner. From the initial concept and material sourcing to managing complex production runs, their team is professional, transparent, and incredibly responsive. They handled a difficult custom fabric request seamlessly and delivered the final order ahead of schedule. Highly recommended for any brand seeking zero-compromise production.",
+        "Very professional team. They helped me choose the right parts for my car and the prices were much better than other shops. I’m extremely satisfied!",
     },
     {
       id: 3,
-      name: "Abdur Gaffar, Dubai",
+      name: "Saeed Al Mamari",
       title: "",
       image: "/clientt/3.jpeg",
       testimonial:
-        "We switched to Alburaq for our premium knitwear collection, and the difference in the final product was immediate. The sweaters had a beautiful hand feel and held their shape perfectly after washing. The entire process, from sample development to the final quality control check, was superior to any other manufacturer we've used. Alburaq’s quality control is simply the best in the business.",
+        "Great experience! The products are durable and exactly as described. Customer support is friendly and helpful. Definitely my go-to place for car parts.",
     },
     {
       id: 4,
-      name: "Muhammad Salim, Dubai",
+      name: "Imran Khan",
       title: "",
       image: "/clientt/5.jpeg",
       testimonial:
-        "We have been sourcing our entire line of outerwear from Alburaq for three seasons, and the quality is consistently exceptional. Our customers demand durable, weather-tested garments, and Alburaq delivers every time. The stitching is flawless, the materials are top-grade, and their attention to detail means fewer returns for us. They truly define manufacturing excellence.",
+        "Affordable, reliable, and premium quality. I bought LED headlights and shock absorbers—both are performing perfectly. Will shop again for sure!",
     },
   ];
 

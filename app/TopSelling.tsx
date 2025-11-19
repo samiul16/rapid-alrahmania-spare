@@ -26,56 +26,56 @@ const TopSellingCarousel = () => {
   const products = [
     {
       id: 1,
-      name: "The Modern Luxe Abaya",
+      name: "Premium Brake Pads",
       price: 40.0,
       rating: 5,
       image: "/top-selling/1.png",
     },
     {
       id: 2,
-      name: "High-Density Logo Polo",
+      name: "High Performance Air Filter",
       price: 45.0,
       rating: 5,
       image: "/top-selling/2.png",
     },
     {
       id: 3,
-      name: "Desert Storm Utility Jacket",
+      name: "Heavy Duty Shock Absorber",
       price: 42.0,
       rating: 5,
       image: "/top-selling/3.png",
     },
     {
       id: 4,
-      name: "Oversized Comfort Knit Set",
+      name: "Engine Oil Filter Kit",
       price: 38.0,
       rating: 5,
       image: "/top-selling/4.png",
     },
     {
       id: 5,
-      name: "Geometric Motif Kaftan",
+      name: "Transmission Fluid Pump",
       price: 43.0,
       rating: 5,
       image: "/top-selling/5.png",
     },
     {
       id: 6,
-      name: "The Precision-Cut Chef Coat",
+      name: "Radiator Cooling System",
       price: 46.0,
       rating: 5,
       image: "/top-selling/6.png",
     },
     {
       id: 7,
-      name: "Modern Luxe Abaya",
+      name: "Spark Plug Set",
       price: 41.0,
       rating: 5,
       image: "/top-selling/7.png",
     },
     {
       id: 8,
-      name: "The Precision-Cut Chef Coat",
+      name: "Timing Belt Assembly",
       price: 39.0,
       rating: 5,
       image: "/top-selling/8.png",
@@ -300,11 +300,11 @@ const TopSellingCarousel = () => {
           >
             <div className="space-y-2">
               <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] text-shadow-md tracking-wide">
-                Top Selling
+                Top Selling Car Parts
               </h2>
               <p className="text-lg sm:text-xl text-gray-700">
-                Experience the Best: Browse Al Buraq&apos;s Top-Rated Apparel &
-                Embroidery.
+                Our customers love these bestsellers—quality and performance you
+                can trust.
               </p>
             </div>
 
