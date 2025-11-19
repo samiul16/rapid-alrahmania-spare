@@ -216,7 +216,7 @@ const Products = () => {
         brand: "Lamborghini",
         dateAdded: new Date("2024-02-12"),
       },
-     {
+      {
         id: 10,
         name: "Alloy Wheel Rim 18 inch",
         price: 280,
@@ -368,15 +368,15 @@ const Products = () => {
           background: transparent;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #22d3ee;
+          background: #e9292a;
           border-radius: 2px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #06b6d4;
+          background: #d12626;
         }
         .custom-scrollbar {
           scrollbar-width: thin;
-          scrollbar-color: #22d3ee transparent;
+          scrollbar-color: #e9292a transparent;
         }
       `}</style>
       <div className=" bg-white">
@@ -440,9 +440,9 @@ const Products = () => {
                             placeholder="Search"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="w-full px-4 py-2.5 pl-10 bg-gray-50 rounded-full border-0 text-sm text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-sky-400 focus:bg-white transition-all shadow-md"
+                            className="w-full px-4 py-2.5 pl-10 bg-gray-50 rounded-full border-0 text-sm text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#E9292A] focus:bg-white transition-all shadow-md"
                           />
-                          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-sky-500" />
+                          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#E9292A]" />
                         </div>
 
                         {/* Category List with Custom Scrollbar */}
@@ -472,7 +472,7 @@ const Products = () => {
                                           selectedCategories.includes(
                                             category.name
                                           )
-                                            ? "bg-sky-500 shadow-sm"
+                                            ? "bg-[#E9292A] shadow-sm"
                                             : "border-2 border-gray-300 hover:border-gray-400"
                                         }`}
                                       >
@@ -555,9 +555,9 @@ const Products = () => {
                           <input
                             type="text"
                             placeholder="Search"
-                            className="w-full px-4 py-2.5 pl-10 bg-gray-50 rounded-full border-0 text-sm text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-200 focus:bg-white transition-all"
+                            className="w-full px-4 py-2.5 pl-10 bg-gray-50 rounded-full border-0 text-sm text-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-200 focus:bg-white transition-all"
                           />
-                          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-sky-400" />
+                          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#E9292A]" />
                         </div>
 
                         {/* Brand List with Custom Scrollbar */}
@@ -574,7 +574,7 @@ const Products = () => {
                                 <div
                                   className={`w-6 h-6 rounded-lg cursor-pointer transition-all duration-200 flex items-center justify-center ${
                                     selectedBrands.includes(brand.name)
-                                      ? "bg-sky-500 shadow-sm"
+                                      ? "bg-[#E9292A] shadow-sm"
                                       : "border-2 border-gray-300 hover:border-gray-400"
                                   }`}
                                   onClick={() => toggleBrand(brand.name)}
@@ -636,7 +636,7 @@ const Products = () => {
                           items: !prev.items,
                         }))
                       }
-                      className="px-4 py-2 rounded-full border bg-white border-sky-400 text-sky-400 text-sm sm:text-base flex items-center gap-2 min-w-[160px] sm:min-w-[180px] justify-between hover:bg-gray-50 transition-colors cursor-pointer shadow-[2px_4px_8px_0px_rgba(0,0,0,0.15)]"
+                      className="px-4 py-2 rounded-full border bg-white border-[#E9292A] text-[#E9292A] text-sm sm:text-base flex items-center gap-2 min-w-[160px] sm:min-w-[180px] justify-between hover:bg-gray-50 transition-colors cursor-pointer shadow-[2px_4px_8px_0px_rgba(0,0,0,0.15)]"
                     >
                       <span>{itemsPerPage} per page</span>
                       <ChevronDown
@@ -680,7 +680,7 @@ const Products = () => {
                           sort: !prev.sort,
                         }))
                       }
-                      className="px-4 py-2 rounded-full border bg-white border-sky-400 text-sky-400 text-sm sm:text-base flex items-center gap-2 min-w-[160px] sm:min-w-[180px] justify-between hover:bg-gray-50 transition-colors cursor-pointer shadow-[2px_4px_8px_0px_rgba(0,0,0,0.15)]"
+                      className="px-4 py-2 rounded-full border bg-white border-[#E9292A] text-[#E9292A] text-sm sm:text-base flex items-center gap-2 min-w-[160px] sm:min-w-[180px] justify-between hover:bg-gray-50 transition-colors cursor-pointer shadow-[2px_4px_8px_0px_rgba(0,0,0,0.15)]"
                     >
                       <span className="truncate">{sortBy}</span>
                       <ChevronDown
@@ -729,12 +729,14 @@ const Products = () => {
                       className={`w-10 h-10 rounded flex items-center justify-center cursor-pointer shadow-[2px_4px_8px_0px_rgba(0,0,0,0.15)] ${
                         viewMode === "grid"
                           ? "bg-white rounded-xl shadow"
-                          : "border border-sky-300 rounded-xl shadow"
+                          : "border border-[#E9292A] rounded-xl shadow"
                       }`}
                     >
                       <Grid
                         className={`w-5 h-5 ${
-                          viewMode === "grid" ? "text-sky-400" : "text-blue-950"
+                          viewMode === "grid"
+                            ? "text-[#E9292A]"
+                            : "text-blue-950"
                         }`}
                       />
                     </motion.button>
@@ -745,12 +747,14 @@ const Products = () => {
                       className={`w-10 h-10 rounded flex items-center justify-center cursor-pointer shadow-[2px_4px_8px_0px_rgba(0,0,0,0.15)] ${
                         viewMode === "list"
                           ? "bg-white rounded-xl shadow"
-                          : "border border-sky-300 rounded-xl shadow"
+                          : "border border-[#E9292A] rounded-xl shadow"
                       }`}
                     >
                       <List
                         className={`w-5 h-5 ${
-                          viewMode === "list" ? "text-sky-400" : "text-blue-950"
+                          viewMode === "list"
+                            ? "text-[#E9292A]"
+                            : "text-blue-950"
                         }`}
                       />
                     </motion.button>
@@ -786,7 +790,7 @@ const Products = () => {
                       exit="hidden"
                       whileHover="hover"
                       layout
-                      className={`bg-sky-50 rounded-2xl shadow-lg overflow-hidden border border-gray-100 ${
+                      className={`bg-red-50 rounded-2xl shadow-lg overflow-hidden border border-gray-100 ${
                         viewMode === "list"
                           ? "flex flex-row h-48"
                           : "flex flex-col h-full"
@@ -917,7 +921,7 @@ const Products = () => {
                         >
                           {/* Price */}
                           <p
-                            className={`text-sky-500 font-bold ${
+                            className={`text-[#E9292A] font-bold ${
                               viewMode === "list"
                                 ? "text-2xl"
                                 : "text-xl mb-4 text-center"
@@ -933,7 +937,7 @@ const Products = () => {
                             onClick={() => {
                               router.push(`/products/${product.id}`);
                             }}
-                            className={`bg-gradient-to-r from-cyan-400 to-sky-600 text-white font-semibold rounded-full hover:bg-sky-500 transition-colors shadow-md cursor-pointer ${
+                            className={`bg-gradient-to-r from-[#E9292A] to-red-600 text-white font-semibold rounded-full hover:bg-red-600 transition-colors shadow-md cursor-pointer ${
                               viewMode === "list"
                                 ? "px-8 py-2.5 text-sm"
                                 : "w-full py-3"
@@ -967,7 +971,7 @@ const Products = () => {
                     className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                       currentPage === 1
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                        : "bg-white border border-sky-300 text-sky-500 hover:bg-sky-50 cursor-pointer"
+                        : "bg-white border border-[#E9292A] text-[#E9292A] hover:bg-red-50 cursor-pointer"
                     }`}
                   >
                     Previous
@@ -991,8 +995,8 @@ const Products = () => {
                               onClick={() => setCurrentPage(page)}
                               className={`w-10 h-10 rounded-lg font-semibold transition-colors cursor-pointer ${
                                 currentPage === page
-                                  ? "bg-sky-400 text-white shadow-md"
-                                  : "bg-white border border-sky-300 text-sky-500 hover:bg-sky-50"
+                                  ? "bg-[#E9292A] text-white shadow-md"
+                                  : "bg-white border border-[#E9292A] text-[#E9292A] hover:bg-red-50"
                               }`}
                             >
                               {page}
@@ -1027,7 +1031,7 @@ const Products = () => {
                     className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
                       currentPage === totalPages
                         ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                        : "bg-white border border-sky-300 text-sky-500 hover:bg-sky-50 cursor-pointer"
+                        : "bg-white border border-[#E9292A] text-[#E9292A] hover:bg-red-50 cursor-pointer"
                     }`}
                   >
                     Next

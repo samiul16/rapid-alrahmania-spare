@@ -51,7 +51,7 @@ const StatCard: React.FC<StatItem> = ({ icon, title, description }) => {
     <div className="text-center group">
       {/* Icon Container */}
       <div className="flex justify-center mb-8">
-        <div className="w-18 h-18 outline-[14px] outline-sky-200 rounded-full shadow-2xl flex items-center justify-center group-hover:bg-sky-50 transition-colors duration-300 ">
+        <div className="w-18 h-18 outline-[14px] outline-red-400 rounded-full shadow-2xl flex items-center justify-center group-hover:bg-red-50 transition-colors duration-300 ">
           <Image
             src={icon}
             alt={title}
@@ -64,7 +64,7 @@ const StatCard: React.FC<StatItem> = ({ icon, title, description }) => {
 
       {/* Content */}
       <div className="space-y-2">
-        <h3 className="text-2xl font-semibold text-gray-900 group-hover:text-sky-600 transition-colors duration-300">
+        <h3 className="text-2xl font-semibold text-gray-900 group-hover:text-[#E9292A] transition-colors duration-300">
           {title}
         </h3>
         <p className="text-md text-gray-600 leading-relaxed max-w-xs mx-auto">

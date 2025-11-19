@@ -40,7 +40,7 @@ export default function ProductPage({ params }: ProductPageProps) {
         <Related />
       </div>
       <div data-aos="fade-up" data-aos-delay="400">
-        <Stats />
+        {/* <Stats /> */}
       </div>
     </div>
   );

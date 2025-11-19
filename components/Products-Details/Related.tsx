@@ -21,44 +21,44 @@ const Related: React.FC<RelatedProps> = ({ products }) => {
   const defaultProducts: RelatedProduct[] = [
     {
       id: "1",
-      name: "Almara Premium Cotton Casual Shirt Short Sleeve",
-      price: 180,
-      image: "/each-products/related.jpg",
+      name: "High Performance Disc Brake Rotor",
+      price: 320,
+      image: "/Exclusive-Deals/2.png",
       badge: "NEW ARRIVAL",
     },
     {
       id: "2",
-      name: "Alburaq Sky Color Slim Fit Full Sleeve Formal Shirt",
-      price: 250,
-      image: "/each-products/related.jpg",
+      name: "Turbo Charger Assembly Kit",
+      price: 850,
+      image: "/Exclusive-Deals/3.png",
       badge: "SALE",
     },
     {
       id: "3",
-      name: "Ameerah Classic White Blouse Long Sleeve",
-      price: 220,
-      image: "/each-products/related.jpg",
+      name: "Premium Alloy Wheel Rim Set",
+      price: 280,
+      image: "/Exclusive-Deals/4.png",
       badge: "BEST SELLER",
     },
     {
       id: "4",
-      name: "Almara Premium Cotton Casual Shirt Short Sleeve",
-      price: 180,
-      image: "/each-products/related.jpg",
+      name: "Engine Oil Filter Premium Kit",
+      price: 65,
+      image: "/top-selling/1.png",
       badge: "NEW ARRIVAL",
     },
     {
       id: "5",
-      name: "Alburaq Sky Color Slim Fit Full Sleeve Formal Shirt",
-      price: 250,
-      image: "/each-products/related.jpg",
+      name: "LED Headlight Assembly",
+      price: 380,
+      image: "/top-selling/5.png",
       badge: "SALE",
     },
     {
       id: "6",
-      name: "Ameerah Classic White Blouse Long Sleeve",
-      price: 220,
-      image: "/each-products/related.jpg",
+      name: "Fuel Injection Pump System",
+      price: 650,
+      image: "/top-selling/7.png",
       badge: "BEST SELLER",
     },
   ];
@@ -68,13 +68,13 @@ const Related: React.FC<RelatedProps> = ({ products }) => {
   const getBadgeStyles = (badge: string) => {
     switch (badge) {
       case "NEW ARRIVAL":
-        return "bg-black text-white";
+        return "bg-[#E9292A] text-white";
       case "SALE":
-        return "bg-black text-white";
+        return "bg-green-600 text-white";
       case "BEST SELLER":
-        return "bg-black text-white";
+        return "bg-blue-600 text-white";
       default:
-        return "bg-black text-white";
+        return "bg-[#E9292A] text-white";
     }
   };
 
@@ -116,10 +116,10 @@ const Related: React.FC<RelatedProps> = ({ products }) => {
                     </div>
                   )}
 
-                  {/* Alburaq Watermark */}
+                  {/* Alrahmania Watermark */}
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="text-gray-200 text-6xl md:text-8xl font-bold opacity-20 transform rotate-12">
-                      A
+                    <div className="text-gray-200 text-4xl md:text-6xl font-bold opacity-20 transform rotate-12">
+                      ALRAHMANIA
                     </div>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const Related: React.FC<RelatedProps> = ({ products }) => {
                   <h3 className="font-semibold text-gray-900 mb-3 text-xl leading-tight">
                     {product.name}
                   </h3>
-                  <p className="text-cyan-500 font-bold text-xl">
+                  <p className="text-[#E9292A] font-bold text-xl">
                     AED {product.price}
                   </p>
                 </div>
