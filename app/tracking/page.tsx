@@ -3,113 +3,118 @@
 import { memo, useState } from "react";
 import {
   FaBox,
-  FaTruck,
   FaCheckCircle,
   FaTimes,
   FaEye,
   FaCalendarAlt,
   FaCreditCard,
-  FaCut,
+  FaCog,
   FaShippingFast,
 } from "react-icons/fa";
 
-// Dummy data for garment orders
+// Dummy data for car parts orders
 const dummyOrders = [
   {
     id: 1,
-    bill_number: "GRM-2024-001",
+    bill_number: "CAR-2024-001",
     status: "Order Received",
     status_ar: "تم استلام الطلب",
-    total_amount: 2500,
+    total_amount: 850,
     created_at: "2024-11-01T10:30:00",
-    delivery_address: "123 Fashion Street, New York, NY 10001",
+    delivery_address: "123 Auto Street, New York, NY 10001",
     customer_name: "John Doe",
     order_items: [
       {
         id: 1,
-        name: "Cotton T-Shirt",
-        name_ar: "قميص قطني",
-        quantity: 3,
-        price: 500,
+        name: "Brake Pads Set",
+        name_ar: "طقم فرامل",
+        quantity: 1,
+        price: 450,
       },
-      { id: 2, name: "Denim Jeans", name_ar: "جينز", quantity: 2, price: 1000 },
+      {
+        id: 2,
+        name: "Oil Filter",
+        name_ar: "فلتر زيت",
+        quantity: 2,
+        price: 400,
+      },
     ],
   },
   {
     id: 2,
-    bill_number: "GRM-2024-002",
+    bill_number: "CAR-2024-002",
     status: "Accepted",
     status_ar: "قيد المعالجة",
-    total_amount: 3800,
+    total_amount: 1200,
     created_at: "2024-11-02T14:15:00",
-    delivery_address: "456 Style Avenue, Los Angeles, CA 90001",
+    delivery_address: "456 Motor Avenue, Los Angeles, CA 90001",
     customer_name: "Jane Smith",
     order_items: [
       {
         id: 3,
-        name: "Silk Dress",
-        name_ar: "فستان حريري",
+        name: "Headlight Assembly",
+        name_ar: "مجموعة المصابيح الأمامية",
         quantity: 1,
-        price: 2800,
+        price: 800,
       },
       {
         id: 4,
-        name: "Leather Jacket",
-        name_ar: "سترة جلدية",
+        name: "Air Filter",
+        name_ar: "فلتر هواء",
         quantity: 1,
-        price: 1000,
+        price: 400,
       },
     ],
   },
   {
     id: 3,
-    bill_number: "GRM-2024-003",
+    bill_number: "CAR-2024-003",
     status: "Completed",
     status_ar: "اكتمل",
-    total_amount: 1800,
+    total_amount: 650,
     created_at: "2024-10-28T09:45:00",
-    delivery_address: "789 Trend Boulevard, Miami, FL 33101",
+    delivery_address: "789 Garage Boulevard, Miami, FL 33101",
     customer_name: "Mike Johnson",
     order_items: [
       {
         id: 5,
-        name: "Casual Shirt",
-        name_ar: "قميص كاجوال",
-        quantity: 2,
-        price: 600,
+        name: "Spark Plugs Set",
+        name_ar: "طقم شمعات الإشعال",
+        quantity: 1,
+        price: 350,
       },
       {
         id: 6,
-        name: "Chino Pants",
-        name_ar: "بنطلون شينو",
+        name: "Wiper Blades",
+        name_ar: "ممسحات الزجاج",
         quantity: 2,
-        price: 1200,
+        price: 300,
       },
     ],
   },
   {
     id: 4,
-    bill_number: "GRM-2024-004",
+    bill_number: "CAR-2024-004",
     status: "Delivered",
     status_ar: "تم التوصيل",
-    total_amount: 4200,
+    total_amount: 950,
     created_at: "2024-10-25T16:20:00",
-    delivery_address: "321 Vogue Lane, Chicago, IL 60601",
+    delivery_address: "321 Service Lane, Chicago, IL 60601",
     customer_name: "Sarah Williams",
     order_items: [
       {
         id: 7,
-        name: "Winter Coat",
-        name_ar: "معطف شتوي",
+        name: "Battery",
+        name_ar: "بطارية",
         quantity: 1,
-        price: 3000,
+        price: 750,
       },
       {
         id: 8,
-        name: "Wool Scarf",
-        name_ar: "وشاح صوفي",
-        quantity: 2,
-        price: 1200,
+        name: "Coolant",
+        name_ar: "سائل التبريد",
+        quantity: 1,
+        price: 200,
       },
     ],
   },
@@ -128,9 +133,9 @@ const steps = [
     id: 2,
     name: "Accepted",
     name_ar: "قيد المعالجة",
-    description: "Fabric cutting in progress",
-    description_ar: "جاري قص القماش",
-    icon: FaCut,
+    description: "Parts preparation in progress",
+    description_ar: "جاري تحضير القطع",
+    icon: FaCog,
   },
   {
     id: 3,
@@ -154,14 +159,14 @@ const statusOrder = ["Order Received", "Accepted", "Completed", "Delivered"];
 
 const getOrderStatus = (value: string) => {
   const orderStatus: Record<string, string> = {
-    "Order Received": "bg-sky-500 w-1/4",
-    "تم استلام الطلب": "bg-sky-500 w-1/4",
-    Accepted: "bg-sky-500 w-2/4",
-    "تم القبول": "bg-sky-500 w-2/4",
-    Completed: "bg-sky-500 w-3/4",
-    اكتمل: "bg-sky-500 w-3/4",
-    Delivered: "bg-sky-500 w-full",
-    "تم التوصيل": "bg-sky-500 w-full",
+    "Order Received": "bg-[#E9292A] w-1/4",
+    "تم استلام الطلب": "bg-[#E9292A] w-1/4",
+    Accepted: "bg-[#E9292A] w-2/4",
+    "تم القبول": "bg-[#E9292A] w-2/4",
+    Completed: "bg-[#E9292A] w-3/4",
+    اكتمل: "bg-[#E9292A] w-3/4",
+    Delivered: "bg-[#E9292A] w-full",
+    "تم التوصيل": "bg-[#E9292A] w-full",
   };
   return orderStatus[value] || "bg-gray-200";
 };
@@ -169,7 +174,7 @@ const getOrderStatus = (value: string) => {
 const getOrderStatusForIcon = (currentStatus: string, stepName: string) => {
   const currentIndex = statusOrder.indexOf(currentStatus);
   const stepIndex = statusOrder.indexOf(stepName);
-  return stepIndex <= currentIndex ? "bg-sky-500" : "bg-gray-200";
+  return stepIndex <= currentIndex ? "bg-[#E9292A]" : "bg-gray-200";
 };
 
 const getStatusColor = (status: string) => {
@@ -212,7 +217,7 @@ interface Order {
   }>;
 }
 
-const GarmentOrderTracking = () => {
+const CarPartsOrderTracking = () => {
   const [orderInfo] = useState<Order[]>(dummyOrders);
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -242,10 +247,10 @@ const GarmentOrderTracking = () => {
       dir={lang === "ar" ? "rtl" : "ltr"}
     >
       {/* Header */}
-      <div className="bg-sky-500 text-white py-8">
+      <div className="bg-[#E9292A] text-white py-8">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold mb-2"> Order Tracking</h1>
-          <p className="text-sky-100">Track your custom garment orders</p>
+          <p className="text-red-100">Track your car parts orders</p>
         </div>
       </div>
 
@@ -292,7 +297,7 @@ const GarmentOrderTracking = () => {
                       className="hover:bg-gray-50 cursor-pointer transition-colors"
                       onClick={() => handleOrderClick(order)}
                     >
-                      <td className="px-6 py-4 font-medium text-sky-500">
+                      <td className="px-6 py-4 font-medium text-[#E9292A]">
                         {bill_number}
                       </td>
                       <td className="px-6 py-4">
@@ -313,7 +318,7 @@ const GarmentOrderTracking = () => {
                       <td className="px-6 py-4">
                         <div className="w-full bg-gray-200 rounded-full h-2">
                           <div
-                            className="bg-sky-500 h-2 rounded-full transition-all"
+                            className="bg-[#E9292A] h-2 rounded-full transition-all"
                             style={{ width: `${progress}%` }}
                           ></div>
                         </div>
@@ -322,7 +327,7 @@ const GarmentOrderTracking = () => {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <button className="text-sky-500 hover:text-sky-600 flex items-center gap-1 justify-center mx-auto whitespace-nowrap cursor-pointer transition-colors">
+                        <button className="text-[#E9292A] hover:text-red-700 flex items-center gap-1 justify-center mx-auto whitespace-nowrap cursor-pointer transition-colors">
                           <FaEye className="h-4 w-4" />
                           View Details
                         </button>
@@ -339,15 +344,15 @@ const GarmentOrderTracking = () => {
         {isModalOpen && selectedOrder && (
           <div className="fixed inset-0 bg-white/30 backdrop-blur-md bg-opacity-50 flex items-center justify-center p-4 z-9999">
             <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="flex justify-between items-center p-6 border-b border-gray-200 bg-sky-50">
+              <div className="flex justify-between items-center p-6 border-b border-gray-200 bg-red-50">
                 <h2 className="text-2xl font-semibold text-gray-900">
                   Order Details
                 </h2>
                 <button
                   onClick={closeModal}
-                  className="hover:bg-sky-100 p-2 rounded-full transition-colors"
+                  className="hover:bg-red-100 p-2 rounded-full transition-colors"
                 >
-                  <FaTimes className="h-6 w-6 text-sky-500 cursor-pointer" />
+                  <FaTimes className="h-6 w-6 text-[#E9292A] cursor-pointer" />
                 </button>
               </div>
 
@@ -356,14 +361,14 @@ const GarmentOrderTracking = () => {
                 <div className="mb-6">
                   <div className="flex flex-wrap gap-4 mb-4">
                     <div className="flex items-center gap-2">
-                      <FaBox className="h-5 w-5 text-sky-500" />
+                      <FaBox className="h-5 w-5 text-[#E9292A]" />
                       <span className="font-medium">Order ID:</span>
-                      <span className="text-sky-500 font-semibold">
+                      <span className="text-[#E9292A] font-semibold">
                         {selectedOrder.bill_number}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <FaCalendarAlt className="h-5 w-5 text-sky-500" />
+                      <FaCalendarAlt className="h-5 w-5 text-[#E9292A]" />
                       <span className="font-medium">Order Date:</span>
                       <span>
                         {selectedOrder.created_at
@@ -372,7 +377,7 @@ const GarmentOrderTracking = () => {
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <FaCreditCard className="h-5 w-5 text-sky-500" />
+                      <FaCreditCard className="h-5 w-5 text-[#E9292A]" />
                       <span className="font-medium">Total:</span>
                       <span className="font-semibold">
                         ${selectedOrder.total_amount}
@@ -404,7 +409,7 @@ const GarmentOrderTracking = () => {
                               getOrderStatusForIcon(
                                 selectedOrder.status,
                                 step.name
-                              ) === "bg-sky-500"
+                              ) === "bg-[#E9292A]"
                                 ? "text-white"
                                 : "text-gray-500"
                             }`}
@@ -447,11 +452,11 @@ const GarmentOrderTracking = () => {
                         </p>
                       </div>
                     ))}
-                    <div className="flex justify-between items-center pt-4 mt-4 border-t-2 border-sky-500">
+                    <div className="flex justify-between items-center pt-4 mt-4 border-t-2 border-[#E9292A]">
                       <p className="text-lg font-semibold text-gray-900">
                         Total Amount
                       </p>
-                      <p className="text-xl font-bold text-sky-500">
+                      <p className="text-xl font-bold text-[#E9292A]">
                         ${selectedOrder.total_amount}
                       </p>
                     </div>
@@ -463,7 +468,7 @@ const GarmentOrderTracking = () => {
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">
                     Delivery Address
                   </h3>
-                  <div className="bg-sky-50 rounded-lg p-4">
+                  <div className="bg-red-50 rounded-lg p-4">
                     <p className="font-medium text-gray-900 mb-1">
                       {selectedOrder.customer_name}
                     </p>
@@ -481,4 +486,4 @@ const GarmentOrderTracking = () => {
   );
 };
 
-export default memo(GarmentOrderTracking);
+export default memo(CarPartsOrderTracking);

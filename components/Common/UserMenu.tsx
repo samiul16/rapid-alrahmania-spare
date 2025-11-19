@@ -118,7 +118,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
           </h3>
           <button
             onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sky-200 transition-colors cursor-pointer"
+            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-100 transition-colors cursor-pointer"
             aria-label="Close user menu"
           >
             <X className="w-5 h-5 text-gray-600" />
@@ -130,7 +130,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             {/* User Info */}
             <div className="p-4 border-b border-gray-100">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#E9292A] to-red-600 rounded-full flex items-center justify-center">
                   <User className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -197,7 +197,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
               <div className="space-y-3">
                 <button
                   onClick={handleLogin}
-                  className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-gradient-to-r from-cyan-300 to-sky-500 text-white rounded-lg hover:from-cyan-400 hover:to-sky-600 transition-all duration-200 transform hover:scale-105 cursor-pointer"
+                  className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-gradient-to-r from-[#E9292A] to-red-600 text-white rounded-lg hover:from-red-600 hover:to-red-700 transition-all duration-200 transform hover:scale-105 cursor-pointer"
                 >
                   <LogIn className="w-5 h-5" />
                   <span className="font-semibold">Sign In</span>

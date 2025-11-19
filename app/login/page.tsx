@@ -127,10 +127,10 @@ export default function LoginPage() {
             variants={containerVariants}
           >
             {/* Header */}
-            <div className="bg-sky-500 text-white text-center py-8 mb-4 rounded-[32px]">
+            <div className="bg-[#E9292A] text-white text-center py-8 mb-4 rounded-[32px]">
               <div className="container mx-auto px-4">
                 <h1 className="text-3xl font-bold mb-2">Welcome Back</h1>
-                <p className="text-sky-100">Sign in to continue your journey</p>
+                <p className="text-red-100">Sign in to continue your journey</p>
               </div>
             </div>
 
@@ -165,7 +165,7 @@ export default function LoginPage() {
                 {/* Email Field */}
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                    <Mail className="w-5 h-5 text-sky-500" />
+                    <Mail className="w-5 h-5 text-[#E9292A]" />
                   </div>
                   <input
                     type="email"
@@ -177,14 +177,14 @@ export default function LoginPage() {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
                       focusedField === "email" ? "rounded-lg" : "rounded-full"
                     }`}
                   />
                   <label
                     className={`absolute left-12 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                       formData.email || focusedField === "email"
-                        ? "-translate-y-1/2 text-xs text-sky-500"
+                        ? "-translate-y-1/2 text-xs text-[#E9292A]"
                         : "translate-y-3 text-base text-gray-500"
                     }`}
                   >
@@ -195,7 +195,7 @@ export default function LoginPage() {
                 {/* Password Field */}
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                    <Lock className="w-5 h-5 text-sky-500" />
+                    <Lock className="w-5 h-5 text-[#E9292A]" />
                   </div>
                   <input
                     type={showPassword ? "text" : "password"}
@@ -207,7 +207,7 @@ export default function LoginPage() {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className={`w-full pl-12 pr-12 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`w-full pl-12 pr-12 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
                       focusedField === "password"
                         ? "rounded-lg"
                         : "rounded-full"
@@ -216,7 +216,7 @@ export default function LoginPage() {
                   <label
                     className={`absolute left-12 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                       formData.password || focusedField === "password"
-                        ? "-translate-y-1/2 text-xs text-sky-500"
+                        ? "-translate-y-1/2 text-xs text-[#E9292A]"
                         : "translate-y-3 text-base text-gray-500"
                     }`}
                   >
@@ -225,7 +225,7 @@ export default function LoginPage() {
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-sky-500 transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#E9292A] transition-colors"
                   >
                     {showPassword ? (
                       <EyeOff className="w-5 h-5" />
@@ -242,13 +242,13 @@ export default function LoginPage() {
                       type="checkbox"
                       checked={rememberMe}
                       onChange={(e) => setRememberMe(e.target.checked)}
-                      className="w-4 h-4 text-sky-500 border-gray-300 rounded focus:ring-sky-500 focus:ring-2 cursor-pointer"
+                      className="w-4 h-4 text-[#E9292A] border-gray-300 rounded focus:ring-[#E9292A] focus:ring-2 cursor-pointer"
                     />
                     <span className="text-sm text-gray-600">Remember me</span>
                   </label>
                   <Link
                     href="/forgot-password"
-                    className="text-sm text-sky-500 hover:text-sky-600 font-semibold transition-colors"
+                    className="text-sm text-[#E9292A] hover:text-red-600 font-semibold transition-colors"
                   >
                     Forgot Password?
                   </Link>
@@ -258,7 +258,7 @@ export default function LoginPage() {
                 <motion.button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full px-8 py-4 bg-gradient-to-r from-cyan-300 to-sky-600 hover:bg-sky-600 rounded-[84px] text-white text-xl font-bold uppercase tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${
+                  className={`w-full px-8 py-4 bg-gradient-to-r from-[#E9292A] to-red-600 hover:bg-red-600 rounded-[84px] text-white text-xl font-bold uppercase tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${
                     isSubmitting
                       ? "opacity-50 cursor-not-allowed"
                       : "hover:shadow-lg cursor-pointer"
@@ -285,7 +285,7 @@ export default function LoginPage() {
                     Don&apos;t have an account?{" "}
                     <Link
                       href="/register"
-                      className="text-sky-500 font-semibold hover:text-sky-600 transition-colors"
+                      className="text-[#E9292A] font-semibold hover:text-red-600 transition-colors"
                     >
                       Create Account
                     </Link>

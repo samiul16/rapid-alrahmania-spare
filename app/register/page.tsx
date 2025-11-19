@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { toast } from "react-hot-toast";
-import CommonHeader from "@/components/Common/CommonHeader";
+
 import Link from "next/link";
 
 interface FormData {
@@ -154,10 +154,10 @@ export default function RegisterPage() {
             variants={containerVariants}
           >
             {/* Header */}
-            <div className="bg-sky-500 text-white text-center py-8 mb-4 rounded-[32px]">
+            <div className="bg-[#E9292A] text-white text-center py-8 mb-4 rounded-[32px]">
               <div className="container mx-auto px-4">
                 <h1 className="text-3xl font-bold mb-2"> Create Account</h1>
-                <p className="text-sky-100">
+                <p className="text-red-100">
                   Join us today and start your journey
                 </p>
               </div>
@@ -208,7 +208,7 @@ export default function RegisterPage() {
                 {/* Full Name Field */}
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                    <User className="w-5 h-5 text-sky-500" />
+                    <User className="w-5 h-5 text-[#E9292A]" />
                   </div>
                   <input
                     type="text"
@@ -220,7 +220,7 @@ export default function RegisterPage() {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
                       focusedField === "fullName"
                         ? "rounded-lg"
                         : "rounded-full"
@@ -229,7 +229,7 @@ export default function RegisterPage() {
                   <label
                     className={`absolute left-12 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                       formData.fullName || focusedField === "fullName"
-                        ? "-translate-y-1/2 text-xs text-sky-500"
+                        ? "-translate-y-1/2 text-xs text-[#E9292A]"
                         : "translate-y-3 text-base text-gray-500"
                     }`}
                   >
@@ -240,7 +240,7 @@ export default function RegisterPage() {
                 {/* Email Field */}
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                    <Mail className="w-5 h-5 text-sky-500" />
+                    <Mail className="w-5 h-5 text-[#E9292A]" />
                   </div>
                   <input
                     type="email"
@@ -252,14 +252,14 @@ export default function RegisterPage() {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
                       focusedField === "email" ? "rounded-lg" : "rounded-full"
                     }`}
                   />
                   <label
                     className={`absolute left-12 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                       formData.email || focusedField === "email"
-                        ? "-translate-y-1/2 text-xs text-sky-500"
+                        ? "-translate-y-1/2 text-xs text-[#E9292A]"
                         : "translate-y-3 text-base text-gray-500"
                     }`}
                   >
@@ -270,7 +270,7 @@ export default function RegisterPage() {
                 {/* Phone Field */}
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                    <Phone className="w-5 h-5 text-sky-500" />
+                    <Phone className="w-5 h-5 text-[#E9292A]" />
                   </div>
                   <input
                     type="tel"
@@ -282,14 +282,14 @@ export default function RegisterPage() {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`w-full pl-12 pr-4 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
                       focusedField === "phone" ? "rounded-lg" : "rounded-full"
                     }`}
                   />
                   <label
                     className={`absolute left-12 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                       formData.phone || focusedField === "phone"
-                        ? "-translate-y-1/2 text-xs text-sky-500"
+                        ? "-translate-y-1/2 text-xs text-[#E9292A]"
                         : "translate-y-3 text-base text-gray-500"
                     }`}
                   >
@@ -300,7 +300,7 @@ export default function RegisterPage() {
                 {/* Password Field */}
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                    <Lock className="w-5 h-5 text-sky-500" />
+                    <Lock className="w-5 h-5 text-[#E9292A]" />
                   </div>
                   <input
                     type={showPassword ? "text" : "password"}
@@ -312,7 +312,7 @@ export default function RegisterPage() {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className={`w-full pl-12 pr-12 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`w-full pl-12 pr-12 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
                       focusedField === "password"
                         ? "rounded-lg"
                         : "rounded-full"
@@ -321,7 +321,7 @@ export default function RegisterPage() {
                   <label
                     className={`absolute left-12 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                       formData.password || focusedField === "password"
-                        ? "-translate-y-1/2 text-xs text-sky-500"
+                        ? "-translate-y-1/2 text-xs text-[#E9292A]"
                         : "translate-y-3 text-base text-gray-500"
                     }`}
                   >
@@ -330,7 +330,7 @@ export default function RegisterPage() {
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-sky-500 transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#E9292A] transition-colors"
                   >
                     {showPassword ? (
                       <EyeOff className="w-5 h-5" />
@@ -343,7 +343,7 @@ export default function RegisterPage() {
                 {/* Confirm Password Field */}
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                    <Lock className="w-5 h-5 text-sky-500" />
+                    <Lock className="w-5 h-5 text-[#E9292A]" />
                   </div>
                   <input
                     type={showConfirmPassword ? "text" : "password"}
@@ -355,7 +355,7 @@ export default function RegisterPage() {
                     placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className={`w-full pl-12 pr-12 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
+                    className={`w-full pl-12 pr-12 py-3 bg-white border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed ${
                       focusedField === "confirmPassword"
                         ? "rounded-lg"
                         : "rounded-full"
@@ -365,7 +365,7 @@ export default function RegisterPage() {
                     className={`absolute left-12 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                       formData.confirmPassword ||
                       focusedField === "confirmPassword"
-                        ? "-translate-y-1/2 text-xs text-sky-500"
+                        ? "-translate-y-1/2 text-xs text-[#E9292A]"
                         : "translate-y-3 text-base text-gray-500"
                     }`}
                   >
@@ -374,7 +374,7 @@ export default function RegisterPage() {
                   <button
                     type="button"
                     onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-sky-500 transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#E9292A] transition-colors"
                   >
                     {showConfirmPassword ? (
                       <EyeOff className="w-5 h-5" />
@@ -418,7 +418,7 @@ export default function RegisterPage() {
                 <motion.button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full px-8 py-4 bg-gradient-to-r from-cyan-300 to-sky-600 hover:bg-sky-600 rounded-[84px] text-white text-xl font-bold uppercase tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${
+                  className={`w-full px-8 py-4 bg-[#E9292A] hover:bg-red-700 rounded-[84px] text-white text-xl font-bold uppercase tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${
                     isSubmitting
                       ? "opacity-50 cursor-not-allowed"
                       : "hover:shadow-lg cursor-pointer"
@@ -445,7 +445,7 @@ export default function RegisterPage() {
                     Already have an account?{" "}
                     <Link
                       href="/login"
-                      className="text-sky-500 font-semibold hover:text-sky-600 transition-colors"
+                      className="text-[#E9292A] font-semibold hover:text-red-700 transition-colors"
                     >
                       Sign In
                     </Link>

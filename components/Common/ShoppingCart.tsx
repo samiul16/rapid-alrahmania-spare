@@ -117,7 +117,7 @@ const ShoppingCartComponent: React.FC<ShoppingCartProps> = ({
           </div>
           <button
             onClick={handleClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-sky-200 transition-colors cursor-pointer"
+            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-100 transition-colors cursor-pointer"
             aria-label="Close shopping cart"
           >
             <X className="w-5 h-5 text-gray-600" />
@@ -139,7 +139,7 @@ const ShoppingCartComponent: React.FC<ShoppingCartProps> = ({
             <Link
               href="/products"
               onClick={handleLinkClick}
-              className="px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-lg hover:from-cyan-500 hover:to-blue-600 transition-all duration-200 transform hover:scale-105 font-semibold"
+              className="px-6 py-3 bg-gradient-to-r from-[#E9292A] to-red-600 text-white rounded-lg hover:from-red-600 hover:to-red-700 transition-all duration-200 transform hover:scale-105 font-semibold"
             >
               Browse Products
             </Link>
@@ -169,7 +169,7 @@ const ShoppingCartComponent: React.FC<ShoppingCartProps> = ({
                     <h4 className="font-semibold text-gray-800 truncate">
                       {item.name}
                     </h4>
-                    <p className="font-semibold text-cyan-600">
+                    <p className="font-semibold text-[#E9292A]">
                       ${item.price.toFixed(2)}
                     </p>
                   </div>
@@ -218,7 +218,7 @@ const ShoppingCartComponent: React.FC<ShoppingCartProps> = ({
                 <span className="text-lg font-semibold text-gray-800">
                   Subtotal:
                 </span>
-                <span className="text-xl font-bold text-sky-600">
+                <span className="text-xl font-bold text-[#E9292A]">
                   ${totalPrice.toFixed(2)}
                 </span>
               </div>
@@ -226,7 +226,7 @@ const ShoppingCartComponent: React.FC<ShoppingCartProps> = ({
               <div className="space-y-2">
                 <button
                   onClick={handleCheckout}
-                  className="w-full px-4 py-3 bg-gradient-to-r from-cyan-300 to-sky-500 text-white rounded-full hover:from-cyan-400 hover:to-sky-600 transition-all duration-200 transform hover:scale-105 font-semibold cursor-pointer"
+                  className="w-full px-4 py-3 bg-gradient-to-r from-[#E9292A] to-red-600 text-white rounded-full hover:from-red-600 hover:to-red-700 transition-all duration-200 transform hover:scale-105 font-semibold cursor-pointer"
                 >
                   Checkout
                 </button>
