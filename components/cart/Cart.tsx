@@ -48,7 +48,7 @@ export default function Cart({
           "High-performance ceramic brake pads for superior stopping power.",
         price: 450,
         quantity: 1,
-        image: "/cart/1.jpg",
+        image: "/products/break pad.webp",
         subtotal: 450,
       },
       {
@@ -58,7 +58,7 @@ export default function Cart({
           "Premium oil filter for engine protection and performance.",
         price: 320,
         quantity: 1,
-        image: "/cart/2.jpg",
+        image: "/products/fuel pump.webp",
         subtotal: 320,
       },
       {
@@ -67,7 +67,7 @@ export default function Cart({
         description: "High-flow air filter for improved engine efficiency.",
         price: 180,
         quantity: 1,
-        image: "/cart/3.jpg",
+        image: "/products/Engine Air Intake System.png",
         subtotal: 180,
       },
       {
@@ -76,7 +76,7 @@ export default function Cart({
         description: "Complete LED headlight assembly with modern design.",
         price: 650,
         quantity: 1,
-        image: "/cart/4.jpg",
+        image: "/products/Headlight.jpg",
         subtotal: 650,
       },
     ],
