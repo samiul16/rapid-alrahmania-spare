@@ -114,7 +114,7 @@ const JobApplicationPage = () => {
       id: 2,
       title: "Inventory Control Specialist",
       fullDescription:
-        "Join Al Rehmaniah Auto Accessories as an Inventory Control Specialist to manage our extensive auto parts inventory. The ideal candidate should have excellent organizational skills and attention to detail. This role involves managing stock levels, coordinating with suppliers, maintaining accurate inventory records, and ensuring optimal stock availability for all auto parts categories.",
+        "Join Al Rahmaniah Auto Accessories as an Inventory Control Specialist to manage our extensive auto parts inventory. The ideal candidate should have excellent organizational skills and attention to detail. This role involves managing stock levels, coordinating with suppliers, maintaining accurate inventory records, and ensuring optimal stock availability for all auto parts categories.",
       responsibilities: [
         "Monitor and manage auto parts inventory levels",
         "Coordinate with suppliers for timely stock replenishment",
@@ -159,7 +159,7 @@ const JobApplicationPage = () => {
       id: 3,
       title: "Automotive Technician",
       fullDescription:
-        "Al Rehmaniah Auto Accessories is looking for a skilled Automotive Technician to provide technical support and installation guidance to our customers. The ideal candidate should be technically skilled with hands-on automotive experience. Responsibilities include parts installation guidance, technical customer support, quality inspection of auto parts, and assisting customers with part selection and compatibility.",
+        "Al Rahmaniah Auto Accessories is looking for a skilled Automotive Technician to provide technical support and installation guidance to our customers. The ideal candidate should be technically skilled with hands-on automotive experience. Responsibilities include parts installation guidance, technical customer support, quality inspection of auto parts, and assisting customers with part selection and compatibility.",
       responsibilities: [
         "Provide technical guidance on auto parts installation",
         "Assist customers with part compatibility and selection",
@@ -203,7 +203,7 @@ const JobApplicationPage = () => {
       id: 4,
       title: "Procurement Officer",
       fullDescription:
-        "Al Rehmaniah Auto Accessories seeks an experienced Procurement Officer to manage our supplier relationships and sourcing activities. The ideal candidate should have strong negotiation skills and supplier management experience. This role involves sourcing quality auto parts, negotiating with vendors, maintaining supplier relationships, and ensuring cost-effective procurement processes.",
+        "Al Rahmaniah Auto Accessories seeks an experienced Procurement Officer to manage our supplier relationships and sourcing activities. The ideal candidate should have strong negotiation skills and supplier management experience. This role involves sourcing quality auto parts, negotiating with vendors, maintaining supplier relationships, and ensuring cost-effective procurement processes.",
       responsibilities: [
         "Source and evaluate new suppliers for auto parts",
         "Negotiate prices, terms, and contracts with vendors",
@@ -247,7 +247,7 @@ const JobApplicationPage = () => {
       id: 5,
       title: "Customer Service Representative",
       fullDescription:
-        "Join our customer service team at Al Rehmaniah Auto Accessories to provide exceptional support to our automotive customers. The ideal candidate should be customer-focused with excellent communication skills. This role involves handling customer inquiries, processing orders, providing product information, and ensuring customer satisfaction with our auto parts and services.",
+        "Join our customer service team at Al Rahmaniah Auto Accessories to provide exceptional support to our automotive customers. The ideal candidate should be customer-focused with excellent communication skills. This role involves handling customer inquiries, processing orders, providing product information, and ensuring customer satisfaction with our auto parts and services.",
       responsibilities: [
         "Handle customer inquiries via phone, email, and in-person",
         "Process orders and coordinate with warehouse for fulfillment",
@@ -291,7 +291,7 @@ const JobApplicationPage = () => {
       id: 6,
       title: "Warehouse Supervisor",
       fullDescription:
-        "Al Rehmaniah Auto Accessories is seeking a Warehouse Supervisor to oversee our auto parts storage and distribution operations. The ideal candidate should have strong leadership and logistics management skills. This role involves managing warehouse operations, inventory storage, coordinating shipments, and ensuring efficient parts distribution and delivery processes.",
+        "Al Rahmaniah Auto Accessories is seeking a Warehouse Supervisor to oversee our auto parts storage and distribution operations. The ideal candidate should have strong leadership and logistics management skills. This role involves managing warehouse operations, inventory storage, coordinating shipments, and ensuring efficient parts distribution and delivery processes.",
       responsibilities: [
         "Supervise daily warehouse operations and staff",
         "Manage inventory storage and organization systems",

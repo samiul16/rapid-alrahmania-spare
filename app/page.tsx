@@ -17,6 +17,7 @@ import Stats from "@/components/Stats";
 import CategoriesSection from "@/components/CategoriesSection";
 import ExclusiveDeals from "@/components/ExclusiveDeals";
 import GetStarted from "@/components/GetStarted";
+import WhyChooseAlRehmaniah from "@/components/WhyChoose";
 
 export default function Home() {
   useEffect(() => {
@@ -37,6 +38,10 @@ export default function Home() {
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
             <CategoriesSection />
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100">
+            <WhyChooseAlRehmaniah />
           </div>
 
           <div data-aos="fade-up" data-aos-delay="200">
