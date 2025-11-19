@@ -17,9 +17,9 @@ const HeroSection = () => {
   const slides = [
     {
       image: "/landing/spare-parts-15.jpg",
-      title: "Perfect Parts for Your Car",
+      title: "Drive Excellence with Premium Car Parts",
       subtitle:
-        "Find the exact components your vehicle needs with fast, accurate matching.",
+        "High-quality, reliable, and affordable car parts for every vehicle. Upgrade your car with confidence",
     },
     {
       image: "/landing/spare-parts-7.jpg",
@@ -30,7 +30,8 @@ const HeroSection = () => {
     {
       image: "/landing/spare-parts-1.jpg",
       title: "Smart Car Part Finder",
-      subtitle: "Locate the right parts instantly and keep your car running at its best.",
+      subtitle:
+        "Locate the right parts instantly and keep your car running at its best.",
     },
   ];
 

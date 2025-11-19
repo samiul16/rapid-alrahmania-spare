@@ -254,8 +254,8 @@ const HotProductsSection = () => {
           variants={headerVariants}
         >
           {/* Title */}
-          <h2 className="text-5xl sm:text-5xl font-bold text-[#E9292A] text-shadow-md text-center">
-            Hot Products of the Month
+          <h2 className="text-5xl sm:text-5xl font-bold text-gray-800 text-shadow-md text-center">
+            Hot Products of <span className="text-[#E9292A]">Al Rahmania</span>
           </h2>
 
           <p className="text-gray-600 text-lg max-w-5xl mx-auto">
