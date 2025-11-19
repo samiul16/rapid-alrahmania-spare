@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AboutAlburaq from "@/components/about/AboutAlburaq";
+import AboutAlRahmaniah from "@/components/about/AboutAlburaq";
 // import Recommended from "@/components/Recommended";
 import Recomended from "../Recomended";
 import DownloadOurApp from "@/components/DownloadOurApp";
@@ -27,7 +27,7 @@ export default function Page() {
         ]}
       />
       <div data-aos="fade-up">
-        <AboutAlburaq />
+        <AboutAlRahmaniah />
       </div>
       <div data-aos="fade-up" data-aos-delay="200">
         <Recomended />

@@ -41,7 +41,7 @@ export default function CommonHeader({
                 <span
                   className={
                     item.isActive
-                      ? "text-sky-500 font-semibold text-lg"
+                      ? "text-red-500 font-semibold text-lg"
                       : "text-gray-600 font-semibold text-lg"
                   }
                 >
