@@ -287,7 +287,7 @@ const TopSellingCarousel = () => {
   };
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-gray-50">
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-20 py-12">
         <div className="space-y-10">
           {/* Header */}
@@ -300,7 +300,7 @@ const TopSellingCarousel = () => {
           >
             <div className="space-y-2">
               <h2 className="text-5xl sm:text-5xl font-bold text-[var(--primary)] text-shadow-md tracking-wide">
-                Top Selling Car Parts
+                Top Selling <span className="text-gray-800">Car Parts</span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-700">
                 Our customers love these bestsellers—quality and performance you

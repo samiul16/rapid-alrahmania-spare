@@ -11,55 +11,77 @@ const CareerPage = () => {
   const jobs = [
     {
       id: 1,
-      title: "Production Supervisor",
+      title: "Auto Parts Sales Manager",
       description:
-        "The ideal candidate should have strong leadership skills, the ability to manage production teams, and ensure smooth workflow on the factory floor. Responsibilities include overseeing daily operations, maintaining production targets, and ensuring product quality and efficiency.",
+        "The ideal candidate should have strong leadership skills and extensive knowledge of automotive parts. Responsibilities include managing the sales team, developing customer relationships, achieving sales targets, and ensuring excellent customer service in our showroom.",
       jobType: "Full Time",
       location: "On-site",
-      experience: "3 Years",
-      deadline: "30 November 2025",
+      experience: "5 Years",
+      deadline: "30 December 2025",
       featured: true,
     },
     {
       id: 2,
-      title: "Quality Assurance Officer",
+      title: "Inventory Control Specialist",
       description:
-        "The ideal candidate should have a keen eye for detail and a commitment to excellence. Responsibilities include monitoring garment quality at every stage, identifying defects, and ensuring all products meet company and buyer standards.",
+        "The ideal candidate should have excellent organizational skills and attention to detail. Responsibilities include managing stock levels, coordinating with suppliers, maintaining accurate inventory records, and ensuring optimal stock availability for all auto parts.",
       jobType: "Full Time",
       location: "On-site",
-      experience: "6 Years",
-      deadline: "30 November 2025",
+      experience: "3 Years",
+      deadline: "30 December 2025",
       featured: false,
     },
     {
       id: 3,
-      title: "Merchandiser",
+      title: "Automotive Technician",
       description:
-        "The ideal candidate should be highly organized with excellent communication and negotiation skills. Responsibilities include managing buyer correspondence, following up on orders, coordinating with production teams, and ensuring timely delivery.",
+        "The ideal candidate should be technically skilled with hands-on automotive experience. Responsibilities include parts installation guidance, technical customer support, quality inspection of auto parts, and assisting customers with part selection and compatibility.",
       jobType: "Full Time",
       location: "On-site",
-      experience: "7 Years",
-      deadline: "30 November 2025",
+      experience: "4 Years",
+      deadline: "30 December 2025",
       featured: false,
     },
     {
       id: 4,
-      title: "HR & Compliance Executive",
+      title: "Procurement Officer",
       description:
-        "The ideal candidate should be people-oriented and detail-focused. Responsibilities include managing HR activities, maintaining compliance with labor laws and factory regulations, and supporting employee welfare and engagement programs.",
+        "The ideal candidate should have strong negotiation skills and supplier management experience. Responsibilities include sourcing quality auto parts, negotiating with vendors, maintaining supplier relationships, and ensuring cost-effective procurement processes.",
       jobType: "Full Time",
       location: "On-site",
-      experience: "8 Years",
-      deadline: "30 November 2025",
+      experience: "6 Years",
+      deadline: "30 December 2025",
+      featured: false,
+    },
+    {
+      id: 5,
+      title: "Customer Service Representative",
+      description:
+        "The ideal candidate should be customer-focused with excellent communication skills. Responsibilities include handling customer inquiries, processing orders, providing product information, and ensuring customer satisfaction with our auto parts and services.",
+      jobType: "Full Time",
+      location: "On-site",
+      experience: "2 Years",
+      deadline: "30 December 2025",
+      featured: false,
+    },
+    {
+      id: 6,
+      title: "Warehouse Supervisor",
+      description:
+        "The ideal candidate should have strong leadership and logistics management skills. Responsibilities include overseeing warehouse operations, managing inventory storage, coordinating shipments, and ensuring efficient parts distribution and delivery processes.",
+      jobType: "Full Time",
+      location: "On-site",
+      experience: "4 Years",
+      deadline: "30 December 2025",
       featured: false,
     },
   ];
 
   const whyJoinReasons = [
-    "Passion for Fashion & Quality",
+    "Passion for Automotive Excellence",
     "Respect & Collaboration",
-    "Excellence in Craftsmanship",
-    "Continuous Growth & Innovation",
+    "Excellence in Every Part",
+    "Continuous Learning & Innovation",
     "Diversity & Inclusion",
   ];
 
@@ -132,10 +154,11 @@ const CareerPage = () => {
                 variants={containerVariants}
               >
                 <motion.h2
-                  className="text-3xl sm:text-4xl font-bold text-sky-500 leading-10"
+                  className="text-3xl sm:text-4xl font-bold text-gray-700 leading-10"
                   variants={itemVariants}
                 >
-                  Why Join Al Buraq Garments
+                  Why Join <span className="text-red-500">Al Rahmaniah</span>{" "}
+                  Auto Accessories
                 </motion.h2>
 
                 <div className="flex flex-col gap-6">
@@ -147,13 +170,13 @@ const CareerPage = () => {
                       whileHover={{ x: 10, transition: { duration: 0.2 } }}
                     >
                       <motion.div
-                        className="w-6 h-6 bg-sky-500 rounded-sm flex items-center justify-center flex-shrink-0"
+                        className="w-6 h-6 bg-gray-200 rounded-xl flex items-center justify-center flex-shrink-0"
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <Check className="w-4 h-4 text-white" />
+                        <Check className="w-4 h-4 text-red-500" />
                       </motion.div>
-                      <h3 className="text-xl sm:text-2xl font-medium text-sky-500 leading-normal">
+                      <h3 className="text-xl sm:text-2xl font-medium text-[#E9292A] leading-normal">
                         {reason}
                       </h3>
                     </motion.div>
@@ -170,26 +193,26 @@ const CareerPage = () => {
               >
                 <div className="flex gap-4 sm:gap-6 h-[280px] sm:h-[320px] lg:h-80">
                   <motion.div
-                    className="relative w-[45%] sm:w-52 h-full rounded-[32px] overflow-hidden shadow"
+                    className="relative w-[45%] sm:w-52 h-full rounded-[32px] overflow-hidden shadow-xl"
                     variants={imageVariants}
                     whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
                   >
                     <Image
-                      src="/1.png"
-                      alt="Garment factory workers"
+                      src="/career/spare-parts-warehouse.webp"
+                      alt="Auto parts warehouse"
                       fill
                       className="object-cover"
                     />
                   </motion.div>
                   <motion.div
-                    className="relative flex-1 lg:w-96 h-full rounded-[32px] overflow-hidden shadow"
+                    className="relative flex-1 lg:w-96 h-full rounded-[32px] overflow-hidden shadow-xl"
                     variants={imageVariants}
                     transition={{ delay: 0.2 }}
                     whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
                   >
                     <Image
-                      src="/2.png"
-                      alt="Sewing machine and garment production"
+                      src="/career/spare-parts-warehouse-3.webp"
+                      alt="Auto parts showroom and customer service"
                       fill
                       className="object-cover"
                     />
@@ -205,13 +228,13 @@ const CareerPage = () => {
           <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
             {/* Header */}
             <motion.h1
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sky-500 mb-8 md:mb-10 leading-[48px]"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#E9292A] mb-8 md:mb-10 leading-[48px]"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Current Open Position
+              Current Open Positions
             </motion.h1>
 
             {/* Job Listings */}
@@ -225,22 +248,22 @@ const CareerPage = () => {
               {jobs.map((job, index) => (
                 <motion.div
                   key={job.id}
-                  className="bg-white rounded-[32px] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.16)] p-4 sm:p-6 md:p-8 flex flex-col lg:flex-row gap-4 lg:gap-6 items-start lg:items-center transition-shadow"
+                  className="bg-white rounded-[32px] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.16)] p-4 sm:p-6 md:p-8 flex flex-col lg:flex-row gap-4 lg:gap-6 items-start lg:items-center transition-shadow hover:shadow-[0px_0px_12px_0px_rgba(233,41,42,0.12)]"
                   variants={jobCardVariants}
                   whileHover={{
                     scale: 1.02,
-                    boxShadow: "0px 0px 12px 0px rgba(0,0,0,0.12)",
+                    boxShadow: "0px 0px 12px 0px rgba(233,41,42,0.12)",
                     transition: { duration: 0.3 },
                   }}
                 >
                   {/* Avatar */}
                   <motion.div
-                    className="w-16 h-16 sm:w-20 sm:h-20 bg-sky-500 rounded-full flex-shrink-0 flex items-center justify-center"
+                    className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-200 rounded-full flex-shrink-0 flex items-center justify-center"
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
                   >
                     <Image
-                      src="/career-3.svg"
+                      src="/career/career-auto-icon.png"
                       alt="Career icon"
                       width={32}
                       height={32}
@@ -256,14 +279,14 @@ const CareerPage = () => {
                     whileTap={{ scale: 0.9 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Bookmark className="w-6 h-6 sm:w-8 sm:h-8 text-sky-500" />
+                    <Bookmark className="w-6 h-6 sm:w-8 sm:h-8 text-[#E9292A]" />
                   </motion.button>
 
                   {/* Job Details */}
                   <div className="flex-1 w-full lg:w-auto flex flex-col gap-4 sm:gap-6">
                     {/* Title and Description */}
                     <div className="flex flex-col gap-3 sm:gap-4 lg:gap-6">
-                      <h3 className="text-lg sm:text-xl font-bold text-sky-500 leading-relaxed">
+                      <h3 className="text-lg sm:text-xl font-bold text-[#E9292A] leading-relaxed">
                         {job.title}
                       </h3>
                       <p className="text-sm sm:text-base text-black leading-relaxed">
@@ -292,11 +315,11 @@ const CareerPage = () => {
                       ].map((tag, tagIndex) => (
                         <motion.div
                           key={tagIndex}
-                          className="px-3 sm:px-4 py-2 sm:py-2.5 rounded-full outline outline-1 outline-offset-[-1px] outline-black flex items-center justify-center"
+                          className="px-3 sm:px-4 py-2 sm:py-2.5 rounded-full outline outline-1 outline-offset-[-1px] outline-[#E9292A]/30 flex items-center justify-center"
                           variants={tagVariants}
                           whileHover={{
                             scale: 1.05,
-                            backgroundColor: "rgba(14, 165, 233, 0.1)",
+                            backgroundColor: "rgba(233, 41, 42, 0.1)",
                             transition: { duration: 0.2 },
                           }}
                         >
@@ -312,12 +335,12 @@ const CareerPage = () => {
                   <motion.button
                     className={`w-full lg:w-40 h-10 sm:h-12 px-6 rounded-[84px] flex items-center justify-center transition-all flex-shrink-0 cursor-pointer ${
                       job.featured
-                        ? "bg-sky-500 text-white"
-                        : "bg-indigo-50 text-sky-500"
+                        ? "bg-[#E9292A] text-white"
+                        : "bg-red-50 text-[#E9292A]"
                     }`}
                     whileHover={{
                       scale: 1.05,
-                      backgroundColor: job.featured ? "#0284c7" : "#dbeafe",
+                      backgroundColor: job.featured ? "#d12621" : "#fef2f2",
                       transition: { duration: 0.2 },
                     }}
                     whileTap={{ scale: 0.95 }}

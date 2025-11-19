@@ -74,8 +74,9 @@ const ExclusiveDeals = () => {
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-20 py-12">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-5xl sm:text-5xl font-bold text-[#E9292A] mb-4">
-            Exclusive Deals Across All Parts
+          <h2 className="text-5xl sm:text-5xl text-shadow-md font-bold text-[#E9292A] mb-4">
+            Exclusive Deals{" "}
+            <span className="text-gray-700">Across All Parts</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Get premium car parts at special prices. Only for our valued
