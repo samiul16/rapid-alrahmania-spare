@@ -229,7 +229,7 @@ const TopSellingCarousel = () => {
                   key={i}
                   className={`w-5 h-5 ${
                     i < product.rating
-                      ? "fill-sky-500 text-sky-500"
+                      ? "fill-[#E9292A] text-[#E9292A]"
                       : "text-gray-300"
                   }`}
                 />
@@ -237,7 +237,7 @@ const TopSellingCarousel = () => {
             </div>
 
             {/* Price */}
-            <span className="text-sky-500 text-lg font-bold">
+            <span className="text-[#E9292A] text-lg font-bold">
               AED {product.price.toFixed(2)}
             </span>
           </div>
@@ -275,7 +275,7 @@ const TopSellingCarousel = () => {
               <button
                 onClick={prevSlide}
                 disabled={currentSlide === 0}
-                className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-sky-500 text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600"
+                className="w-12 h-12 rounded-lg bg-gray-100 hover:bg-[#E9292A] text-gray-600 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-100 disabled:hover:text-gray-600"
                 aria-label="Previous slide"
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -284,7 +284,7 @@ const TopSellingCarousel = () => {
               <button
                 onClick={nextSlide}
                 disabled={currentSlide === totalSlides - 1}
-                className="w-12 h-12 rounded-lg bg-sky-500 hover:bg-sky-600 text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-sky-500"
+                className="w-12 h-12 rounded-lg bg-[#E9292A] hover:bg-red-700 text-white flex items-center justify-center transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#E9292A]"
                 aria-label="Next slide"
               >
                 <ChevronRight className="w-6 h-6" />
@@ -334,8 +334,8 @@ const TopSellingCarousel = () => {
                 onClick={() => goToSlide(index)}
                 className={`rounded-full transition-all duration-300 hover:scale-110 ${
                   currentSlide === index
-                    ? "w-14 h-5 bg-sky-500"
-                    : "w-5 h-5 bg-sky-200 hover:bg-sky-300"
+                    ? "w-14 h-5 bg-[#E9292A]"
+                    : "w-5 h-5 bg-red-200 hover:bg-red-300"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
