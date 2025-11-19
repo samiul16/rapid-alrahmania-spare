@@ -68,7 +68,7 @@ const Products = () => {
         name: "Premium Air Brake System",
         price: 450,
         priceText: "AED 450",
-        image: "/Exclusive-Deals/1.png",
+        image: "/products/Engine Air Intake System.png",
         rating: 5,
         reviewCount: 24,
         specs: [
@@ -136,7 +136,7 @@ const Products = () => {
         name: "Engine Oil Filter Kit",
         price: 65,
         priceText: "AED 65",
-        image: "/top-selling/1.png",
+        image: "/top-selling/3.png",
         rating: 5,
         reviewCount: 31,
         specs: [
@@ -170,7 +170,7 @@ const Products = () => {
         name: "LED Headlight Assembly",
         price: 380,
         priceText: "AED 380",
-        image: "/top-selling/5.png",
+        image: "/products/LED Fog Light Kit.png",
         rating: 5,
         reviewCount: 27,
         specs: [
@@ -204,7 +204,7 @@ const Products = () => {
         name: "Carbon Fiber Hood",
         price: 1200,
         priceText: "AED 1200",
-        image: "/top-selling/8.png",
+        image: "/products/carbon fiber hood.webp",
         rating: 5,
         reviewCount: 12,
         specs: [
