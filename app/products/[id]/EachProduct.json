@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Air Brake System - Heavy Duty",
+    "price": 450.0,
+    "originalPrice": 642.86,
+    "discount": 30,
+    "availability": 15,
+    "images": [
+      "/products/Engine Air Intake System.png",
+      "/Air-Brake/1.png",
+      "/Air-Brake/2.png",
+      "/Air-Brake/3.png"
+    ],
+    "sizes": ["Standard", "Heavy Duty", "Commercial"],
+    "colors": ["Black", "Silver", "Chrome"],
+    "code": "ABS-950225",
+    "styleCode": "ABSHD2024/HD (7845)",
+    "features": [
+      "High-grade Aluminum Alloy and Tempered Steel Components",
+      "Precision OEM Fit for Heavy-Duty Vehicles",
+      "Consistent air pressure and fast response",
+      "Heat-resistant and Corrosion-resistant",
+      "Professional Installation Recommended"
+    ],
+    "description": "Ensure maximum safety and uncompromising stopping power with our Premium Air Brake System, engineered for superior performance and exceptional durability in heavy-duty and commercial vehicles. Manufactured with precision-engineered components, this system provides consistent air flow, reliable operation, and enhanced reaction time in critical braking situations.",
+    "additionalInfo": "Designed for an optimal fit and easy integration, the Premium Air Brake System ensures smooth performance, minimal wear, and long-lasting efficiency. Perfect for long-haul trucking, passenger buses, or heavy machinery, this system maintains optimal braking efficiency under extreme load and driving conditions. Please note: Product appearance may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 24,
+    "sku": "ABS-HD-2024",
+    "categories": ["Brake System", "Heavy Duty", "Commercial"],
+    "brand": "Toyota",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Disc Brake Rotor Set - Performance Grade",
+    "price": 320.0,
+    "originalPrice": 457.14,
+    "discount": 30,
+    "availability": 22,
+    "images": [
+      "/Exclusive-Deals/2.png",
+      "/Disc-Brake/1.png",
+      "/Disc-Brake/2.png",
+      "/Disc-Brake/3.png"
+    ],
+    "sizes": ["Standard", "Performance", "Racing"],
+    "colors": ["Silver", "Black", "Chrome"],
+    "code": "DBR-630918",
+    "styleCode": "DBRPG2024/PG (7846)",
+    "features": [
+      "High-grade cast iron or steel alloy construction",
+      "Precision OEM Fit for multiple car models",
+      "Consistent braking with reduced fade and vibration",
+      "Heat-resistant and corrosion-resistant",
+      "Easy bolt-on replacement"
+    ],
+    "description": "Ensure reliable braking performance with our Premium Disc Brake Rotor Set, designed for superior stopping power and durability. Manufactured with high-quality materials, these rotors provide consistent performance, reduce brake fade, and enhance overall safety.",
+    "additionalInfo": "Engineered for precision fitment, the Disc Brake Rotor Set ensures smooth operation, minimal vibration, and long-lasting performance. Perfect for daily driving, performance vehicles, or heavy-duty use, these rotors maintain optimal braking efficiency in all conditions. Please note: Product appearance may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 18,
+    "sku": "DBR-PG-2024",
+    "categories": ["Brake System", "Performance", "European"],
+    "brand": "BMW",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name": "Turbo Charger Assembly - High Performance",
+    "price": 850.0,
+    "originalPrice": 1214.29,
+    "discount": 30,
+    "availability": 8,
+    "images": [
+      "/Exclusive-Deals/3.png",
+      "/Turbo-Charger/1.png",
+      "/Turbo-Charger/2.png",
+      "/Turbo-Charger/3.png"
+    ],
+    "sizes": ["Standard", "Performance", "Racing"],
+    "colors": ["Silver", "Black"],
+    "code": "TCA-842115",
+    "styleCode": "TCAHP2024/HP (7847)",
+    "features": [
+      "High-quality aluminum & steel components",
+      "Boosts horsepower, torque, and fuel efficiency",
+      "Heat-resistant and corrosion-resistant",
+      "OEM precision fit for easy installation",
+      "High-performance design"
+    ],
+    "description": "Enhance your vehicle's performance with our Premium Turbo Charger Assembly, engineered for maximum power, efficiency, and reliability. This high-performance turbocharger increases engine output, improves acceleration, and boosts overall fuel efficiency while maintaining durability under high temperatures and pressures.",
+    "additionalInfo": "Designed with precision engineering, the turbocharger ensures a seamless fit with your engine system, delivering smooth performance and extended lifespan. Perfect for car enthusiasts seeking both power and efficiency, this assembly guarantees enhanced driving experience and superior engine performance. Please note: Product appearance may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 15,
+    "sku": "TCA-HP-2024",
+    "categories": ["Engine Parts", "Performance", "Turbo"],
+    "brand": "Honda",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Alloy Wheel Rim 18 inch - Premium Design",
+    "price": 280.0,
+    "originalPrice": 400.0,
+    "discount": 30,
+    "availability": 35,
+    "images": [
+      "/Exclusive-Deals/4.png",
+      "/Alloy-Wheel/1.png",
+      "/Alloy-Wheel/2.png",
+      "/Alloy-Wheel/3.png"
+    ],
+    "sizes": ["17 inch", "18 inch", "19 inch"],
+    "colors": ["Chrome", "Black", "Silver", "Gunmetal"],
+    "code": "AW-180721",
+    "styleCode": "AWR18PD2024/PD (7848)",
+    "features": [
+      "High-grade Aluminum Alloy construction",
+      "Precision fit for multiple car models",
+      "Lightweight yet strong design",
+      "Corrosion-resistant and long-lasting",
+      "Easy bolt-on installation"
+    ],
+    "description": "Upgrade your vehicle's style and performance with our Premium 18-Inch Alloy Wheels. Designed for strength, durability, and aesthetic appeal, these wheels not only enhance your car's appearance but also improve handling and ride quality.",
+    "additionalInfo": "Made from high-quality aluminum alloy, these wheels are lightweight yet strong, offering superior performance and better fuel efficiency. Perfect for daily driving or performance upgrades, our 18-inch alloy wheels provide a perfect balance of style, strength, and reliability. Please note: Product color/finish may slightly vary due to photographic lighting.",
+    "reviews": 22,
+    "sku": "AWR-PD-2024",
+    "categories": ["Body Parts", "Wheels", "Styling"],
+    "brand": "Mercedes",
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "name": "Engine Oil Filter Kit - Premium Quality",
+    "price": 65.0,
+    "originalPrice": 92.86,
+    "discount": 30,
+    "availability": 50,
+    "images": [
+      "/top-selling/3.png",
+      "/Engine-Oil/1.png",
+      "/Engine-Oil/2.png",
+      "/Engine-Oil/3.png"
+    ],
+    "sizes": ["Standard", "Extended Life", "Racing"],
+    "colors": ["White", "Blue"],
+    "code": "EOFK-731092",
+    "styleCode": "EOFPQ2024/PQ (7849)",
+    "features": [
+      "High-grade filter media with durable housing",
+      "Suitable for multiple car models",
+      "Heat-resistant and long-lasting",
+      "Easy replacement and maintenance",
+      "Protects engine components and extends engine life"
+    ],
+    "description": "Keep your engine running smoothly with our Premium Engine Oil Filter Kit, designed for optimal performance, protection, and longevity. This high-quality kit ensures effective filtration of dirt, debris, and contaminants from your engine oil, protecting vital engine components and enhancing efficiency.",
+    "additionalInfo": "Engineered for durability and precision, the filter kit is compatible with a wide range of vehicles and provides easy installation. Maintain your engine's health, reduce wear and tear, and enjoy a smoother, more reliable driving experience with this essential maintenance kit. Please note: Product appearance may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 31,
+    "sku": "EOF-PQ-2024",
+    "categories": ["Engine Parts", "Maintenance", "Filters"],
+    "brand": "Toyota",
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "name": "Radiator Cooling System - Heavy Duty",
+    "price": 420.0,
+    "originalPrice": 600.0,
+    "discount": 30,
+    "availability": 18,
+    "images": [
+      "/top-selling/3.png",
+      "/products/Engine Air Intake System.png",
+      "/Exclusive-Deals/2.png",
+      "/Exclusive-Deals/4.png"
+    ],
+    "sizes": ["Standard", "Heavy Duty", "Performance"],
+    "colors": ["Silver", "Black"],
+    "code": "RCS-401105",
+    "styleCode": "RCSHD2024/HD (7850)",
+    "features": [
+      "High-grade Aluminum Core and Durable Plastic/Alloy Tanks",
+      "Precision OEM Fit for multiple car and truck models",
+      "High-pressure resistant and corrosion-resistant",
+      "Easy bolt-on replacement",
+      "Maintains optimal engine temperature"
+    ],
+    "description": "Ensure your engine runs at its optimal temperature with our Premium Radiator Cooling System Set, designed for superior heat dissipation and reliability. Manufactured with high-efficiency materials, this system provides consistent cooling performance, prevents overheating, and enhances overall engine longevity.",
+    "additionalInfo": "Engineered for precision fitment across various models, the Radiator Cooling System Set ensures smooth thermal regulation, minimal pressure loss, and long-lasting performance. Perfect for daily commutes, high-performance driving, or heavy-duty hauling, this system maintains optimal engine temperature in all conditions. Please note: Product appearance may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 19,
+    "sku": "RCS-HD-2024",
+    "categories": ["Cooling System", "Heavy Duty", "Maintenance"],
+    "brand": "Honda",
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "name": "LED Headlight Assembly - Advanced Matrix",
+    "price": 380.0,
+    "originalPrice": 542.86,
+    "discount": 30,
+    "availability": 12,
+    "images": [
+      "/products/LED Fog Light Kit.png",
+      "/LED/1.png",
+      "/LED/2.png",
+      "/LED/3.png"
+    ],
+    "sizes": ["Standard", "Premium", "Matrix"],
+    "colors": ["Black", "Chrome"],
+    "code": "LHA-520871",
+    "styleCode": "LHAAM2024/AM (7851)",
+    "features": [
+      "High-Quality ABS Housing with Premium LED Bulbs",
+      "Precision OEM Fit for multiple car models",
+      "Heat-resistant, vibration-resistant, waterproof",
+      "Easy plug-and-play installation",
+      "High-intensity LED with low energy consumption"
+    ],
+    "description": "Upgrade your vehicle's lighting system with our Premium LED Headlight Assembly, designed for superior visibility, style, and durability. Engineered with advanced LED technology, these headlights provide brighter, sharper illumination while consuming less energy compared to standard halogen lights.",
+    "additionalInfo": "The sleek, modern design not only enhances the look of your car but also ensures maximum safety on the road. Built with high-quality materials, the LED Headlight Assembly is resistant to heat, vibration, and weather conditions, making it a reliable choice for long-term use. Perfect for all weather conditions and suitable for daily driving, night journeys, or off-road adventures. Please note: Product color and lighting intensity may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 27,
+    "sku": "LHA-AM-2024",
+    "categories": ["Light Systems", "LED", "Safety"],
+    "brand": "BMW",
+    "rating": 5
+  },
+  {
+    "id": 8,
+    "name": "Fuel Injection Pump - High Pressure",
+    "price": 650.0,
+    "originalPrice": 928.57,
+    "discount": 30,
+    "availability": 10,
+    "images": [
+      "/top-selling/7.png",
+      "/Fuel/1.png",
+      "/Fuel/2.png",
+      "/Fuel/3.png"
+    ],
+    "sizes": ["Standard", "High Pressure", "Performance"],
+    "colors": ["Black", "Silver"],
+    "code": "FIP-925304",
+    "styleCode": "FIPHP2024/HP (7852)",
+    "features": [
+      "High-grade steel and precision components",
+      "Suitable for multiple diesel and petrol engine models",
+      "High-pressure and heat-resistant design",
+      "OEM precision fit for smooth installation",
+      "Boosts engine efficiency and reduces emissions"
+    ],
+    "description": "Ensure optimal engine performance with our Premium Fuel Injection Pump, designed to deliver precise fuel flow and timing for maximum efficiency. This high-quality pump improves fuel combustion, enhances engine power, reduces emissions, and ensures smooth operation across all driving conditions.",
+    "additionalInfo": "Engineered for durability and reliability, the Fuel Injection Pump is made from premium materials to withstand high pressure and temperature. Ideal for maintaining engine health and performance, this pump guarantees long-lasting functionality and consistent results. Please note: Product appearance may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 16,
+    "sku": "FIP-HP-2024",
+    "categories": ["Fuel System", "Diesel", "Performance"],
+    "brand": "Audi",
+    "rating": 4
+  },
+  {
+    "id": 9,
+    "name": "Carbon Fiber Hood - Lightweight Performance",
+    "price": 1200.0,
+    "originalPrice": 1714.29,
+    "discount": 30,
+    "availability": 5,
+    "images": [
+      "/products/carbon fiber hood.webp",
+      "/Carbon-Fiver/1.png",
+      "/Carbon-Fiver/2.png",
+      "/Carbon-Fiver/3.png"
+    ],
+    "sizes": ["Standard", "Vented", "Racing"],
+    "colors": ["Carbon Fiber", "Glossy Black"],
+    "code": "CFH-410721",
+    "styleCode": "CFHLP2024/LP (7853)",
+    "features": [
+      "100% Premium Carbon Fiber construction",
+      "Precision OEM Fit for multiple car models",
+      "Ultra-lightweight for better performance",
+      "Heat-resistant and weather-resistant",
+      "Enhances aerodynamics and reduces vehicle weight"
+    ],
+    "description": "Transform your car's look and performance with our Premium Carbon Fiber Hood, engineered for speed, durability, and style. Made from high-grade carbon fiber, this hood offers exceptional strength while remaining ultra-lightweight, ensuring improved aerodynamics and faster response on the road.",
+    "additionalInfo": "Its sleek, glossy carbon finish gives your vehicle a bold, sporty, and aggressive appearance—perfect for car enthusiasts who want both performance and aesthetics. Designed for a precise OEM fit, installation is smooth and hassle-free. Whether for daily driving or performance upgrades, this Carbon Fiber Hood delivers unmatched quality and long-lasting durability. Please note: Product color/texture may slightly vary due to photographic lighting or screen settings.",
+    "reviews": 12,
+    "sku": "CFH-LP-2024",
+    "categories": ["Body Parts", "Carbon Fiber", "Performance"],
+    "brand": "Lamborghini",
+    "rating": 5
+  },
+  {
+    "id": 10,
+    "name": "Alloy Wheel Rim 18 inch - Sport Edition",
+    "price": 280.0,
+    "originalPrice": 400.0,
+    "discount": 30,
+    "availability": 28,
+    "images": [
+      "/Exclusive-Deals/4.png",
+      "/products/Engine Air Intake System.png",
+      "/Exclusive-Deals/2.png",
+      "/Exclusive-Deals/3.png"
+    ],
+    "sizes": ["17 inch", "18 inch", "19 inch"],
+    "colors": ["Gunmetal", "Chrome", "Black", "Silver"],
+    "code": "AWR-SE-010",
+    "styleCode": "AWRSE2024/SE (7854)",
+    "features": [
+      "Lightweight Aluminum Alloy Construction",
+      "18x8 inches Sport Design",
+      "Multiple Finish Options",
+      "Improved Handling Performance",
+      "Easy Installation"
+    ],
+    "description": "Enhance your vehicle's performance and style with our Sport Edition Alloy Wheel Rims. These 18-inch wheels feature a dynamic spoke design that combines aggressive styling with functional performance. The lightweight construction reduces unsprung weight for improved acceleration and handling.",
+    "additionalInfo": "Engineered using advanced casting techniques for optimal strength and weight distribution. The sport-tuned design provides excellent brake cooling while maintaining structural integrity under demanding driving conditions. Available in multiple finishes to complement any vehicle style.",
+    "reviews": 22,
+    "sku": "AWR-SE-2024",
+    "categories": ["Body Parts", "Wheels", "Sport"],
+    "brand": "Mercedes",
+    "rating": 4
+  }
+]

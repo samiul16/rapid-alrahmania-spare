@@ -216,23 +216,7 @@ const Products = () => {
         brand: "Lamborghini",
         dateAdded: new Date("2024-02-12"),
       },
-      {
-        id: 10,
-        name: "Alloy Wheel Rim 18 inch",
-        price: 280,
-        priceText: "AED 280",
-        image: "/Exclusive-Deals/4.png",
-        rating: 4,
-        reviewCount: 22,
-        specs: [
-          "Material: Lightweight Aluminum Alloy",
-          "Size: 18x8 inches",
-          "Finish: Polished Chrome",
-        ],
-        category: "Body Parts",
-        brand: "Mercedes",
-        dateAdded: new Date("2024-01-25"),
-      },
+      
     ],
     []
   );

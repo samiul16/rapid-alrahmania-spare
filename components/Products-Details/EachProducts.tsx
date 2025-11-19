@@ -12,13 +12,10 @@ import {
   Twitter,
 } from "lucide-react";
 import { useAddToCart } from "@/hooks/useAddToCart";
-import {
-  addToCart,
-  Product as CartProduct,
-} from "@/redux/hooks/cart/cartSlice";
+import { Product as CartProduct } from "@/redux/hooks/cart/cartSlice";
 
 interface ProductData {
-  id: string;
+  id: number;
   name: string;
   price: number;
   originalPrice?: number;
@@ -35,10 +32,12 @@ interface ProductData {
   reviews: number;
   sku: string;
   categories: string[];
+  brand: string;
+  rating: number;
 }
 
 interface EachProductsProps {
-  product?: ProductData;
+  product: ProductData;
 }
 
 const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
@@ -48,41 +47,7 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState("description");
 
-  // Default product data for demonstration
-  const defaultProduct: ProductData = {
-    id: "1",
-    name: "Premium Air Brake System - Heavy Duty",
-    price: 450.0,
-    originalPrice: 642.86,
-    discount: 30,
-    availability: 15,
-    images: [
-      "/Exclusive-Deals/1.png",
-      "/Exclusive-Deals/2.png",
-      "/Exclusive-Deals/3.png",
-      "/Exclusive-Deals/4.png",
-    ],
-    sizes: ["Standard", "Heavy Duty", "Commercial"],
-    colors: ["Black", "Silver", "Chrome"],
-    code: "AIR-BRK-001",
-    styleCode: "ABSHD2024/HD (7845)",
-    features: [
-      "High-Grade Steel & Aluminum Construction",
-      "Heavy Duty Performance",
-      "Compatible with Most Truck Models",
-      "2 Year Warranty",
-      "Professional Installation Recommended",
-    ],
-    description:
-      "Experience superior stopping power with our Premium Air Brake System, engineered for heavy-duty commercial vehicles. This advanced braking system combines cutting-edge technology with robust construction to deliver exceptional performance and reliability. Designed for trucks, buses, and commercial vehicles, this air brake system ensures maximum safety and control in all driving conditions.",
-    additionalInfo:
-      "Manufactured from premium-grade steel and aluminum alloy, this brake system offers outstanding durability and corrosion resistance. The precision-engineered components provide consistent braking performance while minimizing maintenance requirements. Each system undergoes rigorous quality testing to meet international safety standards.",
-    reviews: 12,
-    sku: "ABS-HD-2024",
-    categories: ["Brake System", "Heavy Duty", "Commercial"],
-  };
-
-  const productData = product || defaultProduct;
+  const productData = product;
 
   const handleQuantityChange = (type: "increase" | "decrease") => {
     if (type === "increase") {
@@ -94,18 +59,13 @@ const EachProducts: React.FC<EachProductsProps> = ({ product }) => {
 
   const handleAddToCart = () => {
     const cartProduct: CartProduct = {
-      id: parseInt(productData.id),
+      id: productData.id,
       name: productData.name,
       price: productData.price,
       image_url: productData.images[0],
       currency: "AED",
     };
-    addToCartGlobal(
-      cartProduct,
-      parseInt(productData.id),
-      quantity,
-      setQuantity
-    );
+    addToCartGlobal(cartProduct, productData.id, quantity, setQuantity);
   };
 
   return (
