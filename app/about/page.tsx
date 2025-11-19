@@ -30,7 +30,7 @@ export default function Page() {
         <AboutAlRahmaniah />
       </div>
       <div data-aos="fade-up" data-aos-delay="200">
-        <Recomended />
+        {/* <Recomended /> */}
       </div>
       <div data-aos="fade-up" data-aos-delay="400">
         <DownloadOurApp />

@@ -130,7 +130,7 @@ const CheckoutPage = () => {
                   Personal Information
                 </h2>
 
-                <div className="bg-sky-100 rounded-2xl shadow-[2px_4px_10px_0px_rgba(0,0,0,0.10)] p-6 space-y-6">
+                <div className="bg-red-100 rounded-2xl shadow-[2px_4px_10px_0px_rgba(0,0,0,0.10)] p-6 space-y-6">
                   {/* Name */}
                   <div className="space-y-3">
                     <label className="text-lg font-medium text-zinc-600">
@@ -141,7 +141,7 @@ const CheckoutPage = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                      className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] transition-all"
                       placeholder="Enter your name"
                     />
                   </div>
@@ -156,7 +156,7 @@ const CheckoutPage = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                      className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] transition-all"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -171,7 +171,7 @@ const CheckoutPage = () => {
                       name="mobile"
                       value={formData.mobile}
                       onChange={handleInputChange}
-                      className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                      className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] transition-all"
                       placeholder="Enter your mobile number"
                     />
                   </div>
@@ -187,7 +187,7 @@ const CheckoutPage = () => {
                         name="city"
                         value={formData.city}
                         onChange={handleInputChange}
-                        className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                        className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] transition-all"
                         placeholder="City"
                       />
                     </div>
@@ -201,7 +201,7 @@ const CheckoutPage = () => {
                         name="state"
                         value={formData.state}
                         onChange={handleInputChange}
-                        className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                        className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] transition-all"
                         placeholder="State"
                       />
                     </div>
@@ -215,7 +215,7 @@ const CheckoutPage = () => {
                         name="zip"
                         value={formData.zip}
                         onChange={handleInputChange}
-                        className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                        className="w-full h-14 px-3 bg-white rounded-[10px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] transition-all"
                         placeholder="ZIP Code"
                       />
                     </div>
@@ -231,7 +231,7 @@ const CheckoutPage = () => {
                       value={formData.description}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full px-3 py-3 bg-white rounded-[20px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all resize-none"
+                      className="w-full px-3 py-3 bg-white rounded-[20px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] transition-all resize-none"
                       placeholder="Additional delivery instructions (optional)"
                     />
                   </div>
@@ -249,8 +249,8 @@ const CheckoutPage = () => {
                           htmlFor={`shipping-${option.id}`}
                           className={`relative p-6 bg-white rounded-[50px] border-2 cursor-pointer transition-all ${
                             selectedShipping === option.id
-                              ? "border-sky-500 shadow-lg ring-2 ring-sky-200"
-                              : "border-neutral-200 hover:border-sky-300"
+                              ? "border-[#E9292A] shadow-lg ring-2 ring-red-200"
+                              : "border-neutral-200 hover:border-[#E9292A"
                           }`}
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
@@ -272,13 +272,13 @@ const CheckoutPage = () => {
                                 <div
                                   className={`w-6 h-6 rounded-full border-2 transition-all flex items-center justify-center ${
                                     selectedShipping === option.id
-                                      ? "border-sky-500 bg-white"
+                                      ? "border-[#E9292A] bg-white"
                                       : "border-gray-400 bg-white"
                                   }`}
                                 >
                                   {selectedShipping === option.id && (
                                     <motion.div
-                                      className="w-3 h-3 bg-sky-500 rounded-full"
+                                      className="w-3 h-3 bg-[#E9292A] rounded-full"
                                       initial={{ scale: 0 }}
                                       animate={{ scale: 1 }}
                                       transition={{
@@ -295,7 +295,7 @@ const CheckoutPage = () => {
                                 <div
                                   className={`text-lg font-semibold transition-colors ${
                                     selectedShipping === option.id
-                                      ? "text-sky-600"
+                                      ? "text-[#E9292A]"
                                       : "text-zinc-700"
                                   }`}
                                 >
@@ -310,7 +310,7 @@ const CheckoutPage = () => {
                             <div
                               className={`text-lg font-bold transition-colors ${
                                 selectedShipping === option.id
-                                  ? "text-sky-600"
+                                  ? "text-[#E9292A]"
                                   : "text-zinc-600"
                               }`}
                             >
@@ -330,7 +330,7 @@ const CheckoutPage = () => {
           <div className="w-full lg:w-[400px] space-y-10 mt-30">
             {/* Order Summary */}
             <motion.div
-              className="bg-sky-100 rounded-2xl shadow-[2px_4px_10px_0px_rgba(0,0,0,0.10)] p-6 space-y-6"
+              className="bg-red-100 rounded-2xl shadow-[2px_4px_10px_0px_rgba(0,0,0,0.10)] p-6 space-y-6"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -392,12 +392,12 @@ const CheckoutPage = () => {
                     onChange={(e) => setCouponCode(e.target.value)}
                     placeholder="Coupon Code"
                     disabled={couponApplied}
-                    className="w-full h-12 pl-4 pr-28 bg-white rounded-[50px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-sky-500 text-base font-medium text-zinc-600 disabled:bg-gray-100"
+                    className="w-full h-12 pl-4 pr-28 bg-white rounded-[50px] border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-[#E9292A] text-base font-medium text-zinc-600 disabled:bg-gray-100"
                   />
                   <motion.button
                     onClick={handleApplyCoupon}
                     disabled={couponApplied || !couponCode.trim()}
-                    className="absolute right-0 top-0 h-12 px-7 bg-sky-500 text-white rounded-r-[50px] border border-sky-500 hover:bg-sky-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="absolute right-0 top-0 h-12 px-7 bg-[#E9292A] text-white rounded-r-[50px] border border-[#E9292A] hover:bg-[#E9292A]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -412,7 +412,7 @@ const CheckoutPage = () => {
                 {/* Checkout Button */}
                 <motion.button
                   onClick={handleCheckout}
-                  className="w-full h-12 bg-sky-500 text-white rounded-[100px] border border-sky-500 hover:bg-sky-600 transition-colors font-bold uppercase text-base flex items-center justify-center gap-2"
+                  className="w-full h-12 bg-[#E9292A] text-white rounded-[100px] border border-[#E9292A] hover:bg-[#E9292A] transition-colors font-bold uppercase text-base flex items-center justify-center gap-2"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -424,7 +424,7 @@ const CheckoutPage = () => {
 
             {/* Payment Methods */}
             <motion.div
-              className="bg-sky-100 rounded-2xl shadow-[2px_4px_10px_0px_rgba(0,0,0,0.10)] p-6 space-y-6"
+              className="bg-red-100 rounded-2xl shadow-[2px_4px_10px_0px_rgba(0,0,0,0.10)] p-6 space-y-6"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -460,13 +460,13 @@ const CheckoutPage = () => {
                       <div
                         className={`w-6 h-6 rounded-full border-2 transition-all flex items-center justify-center ${
                           selectedPayment === method.id
-                            ? "border-sky-500 bg-white"
+                            ? "border-[#E9292A] bg-white"
                             : "border-gray-400 bg-white"
                         }`}
                       >
                         {selectedPayment === method.id && (
                           <motion.div
-                            className="w-3 h-3 bg-sky-500 rounded-full"
+                            className="w-3 h-3 bg-[#E9292A] rounded-full"
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{
@@ -482,7 +482,7 @@ const CheckoutPage = () => {
                     <span
                       className={`text-lg font-medium flex items-center gap-2 transition-colors ${
                         selectedPayment === method.id
-                          ? "text-sky-600"
+                          ? "text-[#E9292A]"
                           : "text-neutral-900"
                       }`}
                     >

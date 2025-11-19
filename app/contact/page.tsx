@@ -50,22 +50,22 @@ export default function ContactPage() {
       id: 1,
       icon: Phone,
       title: "Phone",
-      content: "+971 54 324 7559",
-      link: "tel:+971543247559",
+      content: "+971 55 867 4927",
+      link: "tel:+971 55 867 4927",
     },
     {
       id: 2,
       icon: Mail,
       title: "Email",
-      content: "marium.marufa@gmail.com",
-      link: "mailto:marium.marufa@gmail.com",
+      content: "info@alrahmaniahautouae.com",
+      link: "mailto:info@alrahmaniahautouae.com",
     },
     {
       id: 3,
       icon: MapPin,
       title: "Location",
-      content: "Al Rashidiya 1 - Ajman - United Arab Emirates",
-      link: "https://maps.google.com/?q=Al+Rashidiya+1+Ajman+United+Arab+Emirates",
+      content: "Address ind.Area 1 P.O. Box: 79308",
+      link: "https://maps.google.com",
     },
   ];
 
@@ -170,7 +170,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sky-500 mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#E9292A] mb-4">
               Get In Touch
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
@@ -202,13 +202,13 @@ export default function ContactPage() {
                       {/* Icon and Title */}
                       <div className="flex items-center gap-4 mb-6">
                         <motion.div
-                          className="w-14 h-14 bg-sky-100 rounded-full flex items-center justify-center group-hover:bg-sky-500 transition-colors duration-300"
+                          className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center group-hover:bg-[#E9292A] transition-colors duration-300"
                           whileHover={{ rotate: 360, scale: 1.1 }}
                           transition={{ duration: 0.5 }}
                         >
-                          <Icon className="w-7 h-7 text-sky-500 group-hover:text-white transition-colors duration-300" />
+                          <Icon className="w-7 h-7 text-[#E9292A] group-hover:text-white transition-colors duration-300" />
                         </motion.div>
-                        <h3 className="text-2xl sm:text-3xl font-bold text-sky-500">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-[#E9292A">
                           {info.title}
                         </h3>
                       </div>
@@ -226,12 +226,12 @@ export default function ContactPage() {
                                 ? "noopener noreferrer"
                                 : undefined
                             }
-                            className="text-lg sm:text-xl font-bold text-sky-600 hover:text-sky-500 transition-colors duration-300 block"
+                            className="text-lg sm:text-xl font-bold text-[#E9292A] hover:text-[#E9292A] transition-colors duration-300 block"
                           >
                             {info.content}
                           </a>
                         ) : (
-                          <p className="text-lg sm:text-xl font-bold text-sky-500 leading-relaxed">
+                          <p className="text-lg sm:text-xl font-bold text-[#E9292A] leading-relaxed">
                             {info.content}
                           </p>
                         )}
@@ -252,7 +252,7 @@ export default function ContactPage() {
             >
               <form onSubmit={handleSubmit} className="flex flex-col h-full">
                 {/* Title */}
-                <h2 className="text-3xl sm:text-4xl font-bold text-sky-500 mb-6">
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#E9292A] mb-6">
                   Send us a Message
                 </h2>
 
@@ -295,12 +295,12 @@ export default function ContactPage() {
                       placeholder=" "
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                     <label
                       className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                         formData.fullName || focusedField === "fullName"
-                          ? "-translate-y-1/2 text-xs text-sky-500"
+                          ? "-translate-y-1/2 text-xs text-[#E9292A"
                           : "translate-y-3 text-base text-gray-500"
                       }`}
                     >
@@ -320,12 +320,12 @@ export default function ContactPage() {
                       placeholder=" "
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                     <label
                       className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                         formData.phone || focusedField === "phone"
-                          ? "-translate-y-1/2 text-xs text-sky-500"
+                          ? "-translate-y-1/2 text-xs text-[#E9292A"
                           : "translate-y-3 text-base text-gray-500"
                       }`}
                     >
@@ -345,12 +345,12 @@ export default function ContactPage() {
                       placeholder=" "
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                     <label
                       className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                         formData.email || focusedField === "email"
-                          ? "-translate-y-1/2 text-xs text-sky-500"
+                          ? "-translate-y-1/2 text-xs text-[#E9292A]"
                           : "translate-y-3 text-base text-gray-500"
                       }`}
                     >
@@ -368,13 +368,13 @@ export default function ContactPage() {
                       onBlur={() => setFocusedField(null)}
                       placeholder=" "
                       required
-                      className="w-full h-full min-h-[120px] px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-sky-500 transition-all resize-none peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full h-full min-h-[120px] px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal focus:outline-none focus:border-[#E9292A] transition-all resize-none peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                       disabled={isSubmitting}
                     />
                     <label
                       className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none ${
                         formData.message || focusedField === "message"
-                          ? "-translate-y-1/2 text-xs text-sky-500"
+                          ? "-translate-y-1/2 text-xs text-[#E9292A]"
                           : "translate-y-3 text-base text-gray-500"
                       }`}
                     >
@@ -388,7 +388,7 @@ export default function ContactPage() {
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full px-8 py-4 bg-sky-500 hover:bg-sky-600 rounded-[84px] text-white text-xl font-bold uppercase tracking-wide transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${
+                    className={`w-full px-8 py-4 bg-[#E9292A] hover:bg-[#E9292A] rounded-[84px] text-white text-xl font-bold uppercase tracking-wide transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${
                       isSubmitting
                         ? "opacity-50 cursor-not-allowed"
                         : "hover:shadow-lg"

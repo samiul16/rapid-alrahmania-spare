@@ -49,7 +49,7 @@ const Question = () => {
 
   return (
     <section className="py-16 px-4 bg-white">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-24">
         {/* Title */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800">FAQs</h2>
@@ -68,12 +68,12 @@ const Question = () => {
                   onClick={() => toggleFAQ(faq.id)}
                   className="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                 >
-                  <h3 className="text-lg font-semibold text-sky-500 pr-4">
+                  <h3 className="text-lg font-semibold text-[#E9292A] pr-4">
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
                     <div
-                      className={`w-8 h-8 rounded-full border border-sky-500 flex items-center justify-center transition-transform duration-200 ${
+                      className={`w-8 h-8 rounded-full border border-[#E9292A] flex items-center justify-center transition-transform duration-200 ${
                         openFAQ === faq.id ? "rotate-180" : ""
                       }`}
                     >

@@ -119,7 +119,7 @@ export default function Page() {
         />
       </div>
 
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-24 py-12">
+      <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-24 py-12">
         {/* Hero Section */}
         <motion.div
           initial="hidden"
@@ -129,7 +129,7 @@ export default function Page() {
         >
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-sky-500 to-sky-600 rounded-full mb-8"
+            className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#E9292A] to-[#E9292A] rounded-full mb-8"
           >
             <Gift className="w-10 h-10 text-white" />
           </motion.div>
@@ -139,7 +139,7 @@ export default function Page() {
             className="text-5xl md:text-6xl font-bold text-gray-800 mb-6"
           >
             Gift Cards
-            <span className="block text-3xl md:text-4xl text-sky-500 mt-2">
+            <span className="block text-3xl md:text-4xl text-[#E9292A] mt-2">
               Coming Soon!
             </span>
           </motion.h1>
@@ -162,7 +162,7 @@ export default function Page() {
         >
           <motion.div
             variants={cardVariants}
-            className="bg-gradient-to-r from-sky-400 to-sky-600 text-white px-8 py-4 rounded-full shadow-lg"
+            className="bg-gradient-to-r from-[#E9292A] to-[#E9292A] text-white px-8 py-4 rounded-full shadow-lg"
           >
             <div className="flex items-center space-x-3">
               <Clock className="w-6 h-6" />
